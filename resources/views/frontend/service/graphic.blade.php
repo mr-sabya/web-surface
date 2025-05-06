@@ -3,21 +3,22 @@
 @section('content')
 
 <!--Breadcrumb Area-->
-<section class="breadcrumb-areav2" data-background="{{ url('assets/frontend/images/banner/6.jpg') }}">
+<section class="breadcrumb-areav2" data-background="{{ url('assets/frontend/images/banner/4.jpg') }}">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <div class="bread-titlev2">
-                    <h1 class="wow fadeInUp" data-wow-delay=".2s">Need A Premium & Creative Website Designing?</h1>
-                    <p class="mt20 wow fadeInUp" data-wow-delay=".4s">From Startup to Enterprise be ready and don't worry about design and user experience.</p>
-                    <a href="#" class="btn-main bg-btn2 lnk mt20 wow zoomInDown" data-wow-delay=".6s">Get Quote <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                    <h1 class="wow fadeInUp" data-wow-delay=".2s">Graphic Design Services</h1>
+                    <p class="mt20 wow fadeInUp" data-wow-delay=".4s">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since. </p>
+                    <a href="#" class="btn-main bg-btn2 lnk mt20 wow zoomInDown" data-wow-delay=".6s">Get Quote <i
+                            class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
 <div class="statistics-wrap bg-gradient5">
     <div class="container">
         <div class="row small t-ctr mt0">
@@ -69,105 +70,149 @@
     </div>
 </div>
 <!--End Hero-->
-
-
 <!--Start About-->
-<section class="service pad-tb">
+<section class="service pad-tb bg-gradient5">
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <div class="image-block upset bg-shape wow fadeIn">
-                    <img src="{{ url('assets/frontend/images/about/square-image-1.jpg') }}" alt="image" class="img-fluid" />
+                <div class="single-image bg-shape-dez mt0 wow fadeIn">
+                    <img src="{{ url('assets/frontend/images/service/graphic-design.jpg') }}" alt="image" class="img-fluid no-shadow" />
                 </div>
             </div>
-            <div class="col-lg-8 block-1">
+            <div class="col-lg-8 block-1 m-mt50">
                 <div class="common-heading text-l pl25">
                     <span>Overview</span>
-                    <h2>Creative Web Design Service</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry. </p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry.</p>
+                    <h2>Custom Graphic Design Services We Offer</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry. is simply dummy text of the printing and typesetting
+                        industry. </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!--End About-->
-<!--Start Tech-->
-<div class="techonology-used-">
+<!--Start Key points-->
+<section class="service pad-tb light-dark">
     <div class="container">
-        <ul class="h-scroll tech-icons">
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon1.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon2.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon3.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon4.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon5.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon6.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon7.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon8.png') }}" alt="icon"></a></li>
-        </ul>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="text-l service-desc- pr25">
+                    <h3 class="mb20">We use advanced graphic designing tools to create impressive ideas for you</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry.</p>
+                    <ul class="service-point-2 mt20">
+                        <li># 800+ Mobile Delivered</li>
+                        <li># 200+ Team Strength</li>
+                        <li># User-Friendly Interface</li>
+                        <li># 400 Happy Clients</li>
+                        <li># 95% Repeat business</li>
+                        <li># Quality Service UX</li>
+                    </ul>
+                    <a href="#" class="btn-main bg-btn2 lnk mt30">Request A Quote <i
+                            class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="single-image wow fadeIn">
+                    <img src="{{ url('assets/frontend/images/service/branding-.jpg') }}" alt="image" class="img-fluid no-shadow" />
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<!--End Tech-->
+</section>
+<!--End Key points-->
 <!--Start Service-->
 <section class="service-block bg-gradient6 pad-tb">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="common-heading ptag">
                     <span>Service</span>
-                    <h2>Our Services</h2>
-                    <p class="mb30">We think big and have hands in all leading technology platforms to provide you wide array of services.</p>
+                    <h2>Graphic Design services we offer</h2>
+                    <p class="mb30">We think big and have hands in all leading technology platforms to provide you
+                        wide array of services.</p>
                 </div>
             </div>
         </div>
         <div class="row upset link-hover">
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".2s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/logo-and') }}-branding.svg" alt="service" class="img-fluid" /></div>
-                    <h4>Graphic Designing Services</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="col-lg-6 col-md-12 mt30 wow fadeInUp" data-wow-delay=".2s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/logo-design.jpg') }}" alt="service"
+                            class="img-fluid" /></div>
+                    <div class="s-block-content-large">
+                        <h4>Logo Designing</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is
+                            simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".4s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/service2.svg') }}" alt="service" class="img-fluid" /></div>
-                    <h4>Responsive Web Designing</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="col-lg-6 col-md-12 mt30 wow fadeInUp" data-wow-delay=".4s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/packaging-design.jpg') }}" alt="service"
+                            class="img-fluid" /></div>
+                    <div class="s-block-content-large">
+                        <h4>Packaging Design</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is
+                            simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".6s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/service3.svg') }}" alt="service" class="img-fluid" /></div>
-                    <h4>Static Website Designing</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="col-lg-6 col-md-12 mt30 wow fadeInUp" data-wow-delay=".6s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/brochure-.jpg') }}" alt="service"
+                            class="img-fluid" /></div>
+                    <div class="s-block-content-large">
+                        <h4>Brochure Design</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is
+                            simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".8s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/service4.svg') }}" alt="service" class="img-fluid" /></div>
-                    <h4>Dynamic Website Designing</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="col-lg-6 col-md-12 mt30 wow fadeInUp" data-wow-delay=".8s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon-large"><img src="https://separateweb.com/" alt="service"
+                            class="img-fluid" /></div>
+                    <div class="s-block-content-large">
+                        <h4>Flyer Design</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is
+                            simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay="1s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/service5.svg') }}" alt="service" class="img-fluid" /></div>
-                    <h4>Psd to HTML Service</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="col-lg-6 col-md-12 mt30 wow fadeInUp" data-wow-delay="1s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/newsletter.jpg') }}" alt="service"
+                            class="img-fluid" /></div>
+                    <div class="s-block-content-large">
+                        <h4>Newsletter Designing</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is
+                            simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay="1.2s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/service6.svg') }}" alt="service" class="img-fluid" /></div>
-                    <h4>Website Redesign Service</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="col-lg-6 col-md-12 mt30 wow fadeInUp" data-wow-delay="1.2s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/visit-card.jpg') }}" alt="service"
+                            class="img-fluid" /></div>
+                    <div class="s-block-content-large">
+                        <h4>Business Card Designs</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is
+                            simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="-cta-btn mt70">
-            <div class="free-cta-title v-center wow zoomInDown" data-wow-delay="1.3s">
-                <p>Hire a <span>Dedicated Developer</span></p>
-                <a href="#" class="btn-main bg-btn2 lnk">Hire Now<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+            <div class="free-cta-title v-center wow zoomInDown" data-wow-delay="1.4s">
+                <p>Hire a <span>Graphic Designer</span></p>
+                <a href="#" class="btn-main bg-btn2 lnk">Hire Now<i class="fas fa-chevron-right fa-icon"></i><span
+                        class="circle"></span></a>
             </div>
         </div>
     </div>
@@ -181,7 +226,8 @@
                 <div class="common-heading ptag">
                     <span>Process</span>
                     <h2>Our App Development Process</h2>
-                    <p>Our design process follows a proven approach. We begin with a deep understanding of your needs and create a planning template.</p>
+                    <p>Our design process follows a proven approach. We begin with a deep understanding of your
+                        needs and create a planning template.</p>
                 </div>
             </div>
         </div>
@@ -195,7 +241,9 @@
                 <div class="ps-block">
                     <span>1</span>
                     <h3>Requirement Gathering</h3>
-                    <p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.</p>
+                    <p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi.
+                        Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci
+                        lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.</p>
                 </div>
             </div>
         </div>
@@ -204,7 +252,9 @@
                 <div class="ps-block">
                     <span>2</span>
                     <h3>Prototype</h3>
-                    <p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.</p>
+                    <p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi.
+                        Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci
+                        lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.</p>
                 </div>
             </div>
             <div class="col-lg-4 v-center order1">
@@ -223,7 +273,9 @@
                 <div class="ps-block">
                     <span>3</span>
                     <h3>Deployment</h3>
-                    <p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.</p>
+                    <p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi.
+                        Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci
+                        lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.</p>
                 </div>
             </div>
         </div>
@@ -232,7 +284,9 @@
                 <div class="ps-block">
                     <span>4</span>
                     <h3>Support & Maintenance</h3>
-                    <p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.</p>
+                    <p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi.
+                        Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci
+                        lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.</p>
                 </div>
             </div>
             <div class="col-lg-4 v-center order1">
@@ -252,14 +306,16 @@
                 <div class="common-heading ptag">
                     <span>We Deliver Our Best</span>
                     <h2>Why Choose Niwax</h2>
-                    <p class="mb30">Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit.</p>
+                    <p class="mb30">Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel
+                        hendrerit nisi. Vestibulum eget risus velit.</p>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-4 col-sm-6 mt30  wow fadeIn" data-wow-delay=".2s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/teama.svg') }}" alt="service" class="img-fluid"></div>
+                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/teama.svg') }}" alt="service" class="img-fluid">
+                    </div>
                     <div class="s-block-content">
                         <h4>Reliable Service. In House Team</h4>
                         <p>In vel hendrerit nisi. Vestibulum eget risus velit.</p>
@@ -295,7 +351,8 @@
             </div>
             <div class="col-lg-4 col-sm-6 mt30 wow fadeIn" data-wow-delay="1.4s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/badge.svg') }}" alt="service" class="img-fluid"></div>
+                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/badge.svg') }}" alt="service" class="img-fluid">
+                    </div>
                     <div class="s-block-content">
                         <h4>Excellent Quality Delivered on Time</h4>
                         <p>In vel hendrerit nisi. Vestibulum eget risus velit.</p>
@@ -315,7 +372,8 @@
         <div class="-cta-btn mt70">
             <div class="free-cta-title v-center wow zoomInDown" data-wow-delay="1.8s">
                 <p>Let's Start a <span>New Project</span> Together</p>
-                <a href="#" class="btn-main bg-btn2 lnk">Inquire Now<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                <a href="#" class="btn-main bg-btn2 lnk">Inquire Now<i
+                        class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
             </div>
         </div>
     </div>
@@ -352,7 +410,8 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#" class="btn-main bg-btn lnk">Get Started <i class="fas fa-chevron-right fa-icon"></i> <span class="circle"></span></a>
+                    <a href="#" class="btn-main bg-btn lnk">Get Started <i class="fas fa-chevron-right fa-icon"></i>
+                        <span class="circle"></span></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -373,7 +432,8 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#" class="btn-main bg-btn3 lnk">Get Started <i class="fas fa-chevron-right fa-icon"></i> <span class="circle"></span></a>
+                    <a href="#" class="btn-main bg-btn3 lnk">Get Started <i
+                            class="fas fa-chevron-right fa-icon"></i> <span class="circle"></span></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -394,7 +454,8 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#" class="btn-main bg-btn lnk">Get Started <i class="fas fa-chevron-right fa-icon"></i> <span class="circle"></span></a>
+                    <a href="#" class="btn-main bg-btn lnk">Get Started <i class="fas fa-chevron-right fa-icon"></i>
+                        <span class="circle"></span></a>
                 </div>
             </div>
         </div>
@@ -409,7 +470,8 @@
                 <div class="common-heading ptag">
                     <span>Our Projects</span>
                     <h2>Some of Our Works</h2>
-                    <p class="mb0">We think big and have hands in all leading technology platforms to provide you wide array of services.</p>
+                    <p class="mb0">We think big and have hands in all leading technology platforms to provide you
+                        wide array of services.</p>
                 </div>
             </div>
         </div>
@@ -417,7 +479,8 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".2s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-1.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-1.jpg') }}" alt="portfolio" class="img-fluid" />
+                        </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Creative </a></h4>
@@ -428,7 +491,8 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".4s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-2.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-2.jpg') }}" alt="portfolio" class="img-fluid" />
+                        </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Brochure Design</a></h4>
@@ -439,7 +503,8 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".6s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-3.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-3.jpg') }}" alt="portfolio" class="img-fluid" />
+                        </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Ecommerce Development</a></h4>
@@ -450,7 +515,8 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".8s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-4.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-4.jpg') }}" alt="portfolio" class="img-fluid" />
+                        </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Icon Pack</a></h4>
@@ -461,7 +527,8 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay="1s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-5.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-5.jpg') }}" alt="portfolio" class="img-fluid" />
+                        </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Smart Watch</a></h4>
@@ -472,7 +539,8 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay="1.2s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-6.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-6.jpg') }}" alt="portfolio" class="img-fluid" />
+                        </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Brochure Design</a></h4>
@@ -483,7 +551,8 @@
         </div>
         <div class="row">
             <div class="col-lg-12 maga-btn mt60">
-                <a href="javascript:void(0)" class="btn-outline">View More Projects <i class="fas fa-chevron-right fa-icon"></i></a>
+                <a href="javascript:void(0)" class="btn-outline">View More Projects <i
+                        class="fas fa-chevron-right fa-icon"></i></a>
             </div>
         </div>
     </div>
@@ -506,10 +575,13 @@
                 <div class="reviews-card pr-shadow">
                     <div class="row v-center">
                         <div class="col"> <span class="revbx-lr"><i class="fas fa-quote-left"></i></span> </div>
-                        <div class="col"> <span class="revbx-rl"><img src="{{ url('assets/frontend/images/client/envato.png') }}" alt="review service logo"></span> </div>
+                        <div class="col"> <span class="revbx-rl"><img src="{{ url('assets/frontend/images/client/envato.png') }}"
+                                    alt="review service logo"></span> </div>
                     </div>
                     <div class="review-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                     <div class="-client-details-">
                         <div class="reviewer-text">
@@ -517,11 +589,16 @@
                             <p>Business Owner, <small>Jaipur</small></p>
                             <div class="star-rate">
                                 <ul>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -532,10 +609,13 @@
                 <div class="reviews-card pr-shadow">
                     <div class="row v-center">
                         <div class="col"> <span class="revbx-lr"><i class="fas fa-quote-left"></i></span> </div>
-                        <div class="col"> <span class="revbx-rl"><img src="{{ url('assets/frontend/images/client/envato.png') }}" alt="review service logo"></span> </div>
+                        <div class="col"> <span class="revbx-rl"><img src="{{ url('assets/frontend/images/client/envato.png') }}"
+                                    alt="review service logo"></span> </div>
                     </div>
                     <div class="review-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                     <div class="-client-details-">
                         <div class="reviewer-text">
@@ -543,11 +623,16 @@
                             <p>Business Owner, <small>Jaipur</small></p>
                             <div class="star-rate">
                                 <ul>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -558,10 +643,13 @@
                 <div class="reviews-card pr-shadow">
                     <div class="row v-center">
                         <div class="col"> <span class="revbx-lr"><i class="fas fa-quote-left"></i></span> </div>
-                        <div class="col"> <span class="revbx-rl"><img src="{{ url('assets/frontend/images/client/envato.png') }}" alt="review service logo"></span> </div>
+                        <div class="col"> <span class="revbx-rl"><img src="{{ url('assets/frontend/images/client/envato.png') }}"
+                                    alt="review service logo"></span> </div>
                     </div>
                     <div class="review-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                     <div class="-client-details-">
                         <div class="reviewer-text">
@@ -569,11 +657,16 @@
                             <p>Business Owner, <small>Jaipur</small></p>
                             <div class="star-rate">
                                 <ul>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
+                                    <li> <a href="javascript:void(0)"><i class="fas fa-star"
+                                                aria-hidden="true"></i></a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -592,8 +685,10 @@
                 <div class="common-heading">
                     <span>Let's work together</span>
                     <h2>We Love to Listen to Your Requirements</h2>
-                    <a href="javascript:void(0)" class="btn-outline">Estimate Project <i class="fas fa-chevron-right fa-icon"></i></a>
-                    <p class="cta-call">Or call us now <a href="tel:+1234567890"><i class="fas fa-phone-alt"></i> (123) 456 7890</a></p>
+                    <a href="javascript:void(0)" class="btn-outline">Estimate Project <i
+                            class="fas fa-chevron-right fa-icon"></i></a>
+                    <p class="cta-call">Or call us now <a href="tel:+1234567890"><i class="fas fa-phone-alt"></i>
+                            (123) 456 7890</a></p>
                 </div>
             </div>
         </div>

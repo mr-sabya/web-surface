@@ -15,9 +15,8 @@
                         <ul>
                             <li><a href="{{ route('service.web') }}" wire:navigate>Wed Development</a> </li>
                             <li><a href="{{ route('service.app') }}" wire:navigate>Android App Development</a> </li>
-                            <li><a href="portfolio-block.html">SEO & Digital Marketing</a> </li>
-                            <li><a href="portfolio-block-2.html">Graphic Design</a> </li>
-                            <li><a href="portfolio-details.html">Video Editing</a> </li>
+                            <li><a href="{{ route('service.seo') }}" wire:navigate>SEO & Digital Marketing</a> </li>
+                            <li><a href="{{ route('service.graphic') }}" wire:navigate>Graphic Design</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -28,6 +27,6 @@
         <a href="{{ route('portfolio.index') }}" class="menu-links" wire:navigate>Portfolio</a>
     </li>
     <li>
-        <a href="#" class="menu-links">Blog</a>
+        <a href="{{ route('blog.index') }}" class="menu-links" wire:navigate>Blog</a>
     </li>
 </ul>

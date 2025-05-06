@@ -3,7 +3,7 @@
 @section('content')
 
 <!--Breadcrumb Area-->
-<section class="breadcrumb-areav2" data-background="images/banner/8.jpg">
+<section class="breadcrumb-areav2" data-background="{{ url('assets/frontend/images/banner/8.jpg') }}">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7">
@@ -22,7 +22,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="statistics">
                     <div class="statistics-img">
-                        <img src="images/icons/deal.svg" alt="happy" class="img-fluid">
+                        <img src="{{ url('assets/frontend/images/icons/deal.svg') }}" alt="happy" class="img-fluid">
                     </div>
                     <div class="statnumb">
                         <span class="counter">450</span>
@@ -33,7 +33,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="statistics">
                     <div class="statistics-img">
-                        <img src="images/icons/computers.svg" alt="project" class="img-fluid">
+                        <img src="{{ url('assets/frontend/images/icons/computers.svg') }}" alt="project" class="img-fluid">
                     </div>
                     <div class="statnumb counter-number">
                         <span class="counter">48</span><span>k</span>
@@ -44,7 +44,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="statistics">
                     <div class="statistics-img">
-                        <img src="images/icons/worker.svg" alt="work" class="img-fluid">
+                        <img src="{{ url('assets/frontend/images/icons/worker.svg') }}" alt="work" class="img-fluid">
                     </div>
                     <div class="statnumb">
                         <span class="counter">95</span><span>k</span>
@@ -55,7 +55,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="statistics mb0">
                     <div class="statistics-img">
-                        <img src="images/icons/customer-service.svg" alt="support" class="img-fluid">
+                        <img src="{{ url('assets/frontend/images/icons/customer-service.svg') }}" alt="support" class="img-fluid">
                     </div>
                     <div class="statnumb">
                         <span class="counter">24</span><span>/</span><span class="counter">7</span>
@@ -73,7 +73,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="image-block wow fadeIn">
-                    <img src="images/service/app-develops.png" alt="image" class="img-fluid no-shadow" />
+                    <img src="{{ url('assets/frontend/images/service/app-develops.png') }}" alt="image" class="img-fluid no-shadow" />
                 </div>
             </div>
             <div class="col-lg-8 block-1">
@@ -129,14 +129,14 @@
 <div class="techonology-used-">
     <div class="container">
         <ul class="h-scroll tech-icons">
-            <li><a href="#"><img src="images/icons/stack-icon1.png" alt="icon"></a></li>
-            <li><a href="#"><img src="images/icons/stack-icon2.png" alt="icon"></a></li>
-            <li><a href="#"><img src="images/icons/stack-icon3.png" alt="icon"></a></li>
-            <li><a href="#"><img src="images/icons/stack-icon4.png" alt="icon"></a></li>
-            <li><a href="#"><img src="images/icons/stack-icon5.png" alt="icon"></a></li>
-            <li><a href="#"><img src="images/icons/stack-icon6.png" alt="icon"></a></li>
-            <li><a href="#"><img src="images/icons/stack-icon7.png" alt="icon"></a></li>
-            <li><a href="#"><img src="images/icons/stack-icon8.png" alt="icon"></a></li>
+            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon1.png') }}" alt="icon"></a></li>
+            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon2.png') }}" alt="icon"></a></li>
+            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon3.png') }}" alt="icon"></a></li>
+            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon4.png') }}" alt="icon"></a></li>
+            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon5.png') }}" alt="icon"></a></li>
+            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon6.png') }}" alt="icon"></a></li>
+            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon7.png') }}" alt="icon"></a></li>
+            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon8.png') }}" alt="icon"></a></li>
         </ul>
     </div>
 </div>
@@ -157,7 +157,7 @@
 
             <div class="col-lg-6 col-sm-6 mt30  wow fadeInUp" data-wow-delay=".2s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon-large"><img src="images/service/mob-service-item2.png" alt="service" class="img-fluid" /></div>
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/mob-service-item2.png') }}" alt="service" class="img-fluid" /></div>
                     <div class="s-block-content-large">
                         <h4>iOS App Development</h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -167,7 +167,7 @@
 
             <div class="col-lg-6 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".4s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon-large"><img src="images/service/mob-service-item1.png" alt="service" class="img-fluid" /></div>
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/mob-service-item1.png') }}" alt="service" class="img-fluid" /></div>
                     <div class="s-block-content-large">
                         <h4>Android App Development</h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -177,7 +177,7 @@
 
             <div class="col-lg-6 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".6s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon-large"><img src="images/service/mob-service-item3.png" alt="service" class="img-fluid" /></div>
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/mob-service-item3.png') }}" alt="service" class="img-fluid" /></div>
                     <div class="s-block-content-large">
                         <h4>Cross Platform App Development</h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -187,7 +187,7 @@
 
             <div class="col-lg-6 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".8s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon-large"><img src="images/service/mob-service-item4.png" alt="service" class="img-fluid" /></div>
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/mob-service-item4.png') }}" alt="service" class="img-fluid" /></div>
                     <div class="s-block-content-large">
                         <h4>Wearable App Development</h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -221,7 +221,7 @@
         <div class="row upset justify-content-center mt60">
             <div class="col-lg-4 v-center order1">
                 <div class="image-block1">
-                    <img src="images/process/process-1.jpg" alt="Process" class="img-fluid" />
+                    <img src="{{ url('assets/frontend/images/process/process-1.jpg') }}" alt="Process" class="img-fluid" />
                 </div>
             </div>
             <div class="col-lg-7 v-center order2">
@@ -242,14 +242,14 @@
             </div>
             <div class="col-lg-4 v-center order1">
                 <div class="image-block1">
-                    <img src="images/process/process-2.jpg" alt="Process" class="img-fluid" />
+                    <img src="{{ url('assets/frontend/images/process/process-2.jpg') }}" alt="Process" class="img-fluid" />
                 </div>
             </div>
         </div>
         <div class="row upset justify-content-center mt60">
             <div class="col-lg-4 v-center order1">
                 <div class="image-block1">
-                    <img src="images/process/process-3.jpg" alt="Process" class="img-fluid" />
+                    <img src="{{ url('assets/frontend/images/process/process-3.jpg') }}" alt="Process" class="img-fluid" />
                 </div>
             </div>
             <div class="col-lg-7 v-center order2">
@@ -270,7 +270,7 @@
             </div>
             <div class="col-lg-4 v-center order1">
                 <div class="image-block1">
-                    <img src="images/process/process-4.jpg" alt="Process" class="img-fluid" />
+                    <img src="{{ url('assets/frontend/images/process/process-4.jpg') }}" alt="Process" class="img-fluid" />
                 </div>
             </div>
         </div>
@@ -292,7 +292,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-4 col-sm-6 mt30  wow fadeIn" data-wow-delay=".2s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon"><img src="images/icons/teama.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/teama.svg') }}" alt="service" class="img-fluid"></div>
                     <div class="s-block-content">
                         <h4>Reliable Service. In House Team</h4>
                         <p>In vel hendrerit nisi. Vestibulum eget risus velit.</p>
@@ -301,7 +301,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 mt30 wow fadeIn" data-wow-delay=".5s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon"><img src="images/icons/link.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/link.svg') }}" alt="service" class="img-fluid"></div>
                     <div class="s-block-content">
                         <h4>Trusted by People Like You</h4>
                         <p>In vel hendrerit nisi. Vestibulum eget risus velit.</p>
@@ -310,7 +310,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 mt30 wow fadeIn" data-wow-delay=".8s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon"><img src="images/icons/tech.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/tech.svg') }}" alt="service" class="img-fluid"></div>
                     <div class="s-block-content">
                         <h4>Complete Technical Competency</h4>
                         <p>In vel hendrerit nisi. Vestibulum eget risus velit.</p>
@@ -319,7 +319,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 mt30 wow fadeIn" data-wow-delay="1.1s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon"><img src="images/icons/hi.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/hi.svg') }}" alt="service" class="img-fluid"></div>
                     <div class="s-block-content">
                         <h4>Friendly & Cordial in Nature</h4>
                         <p>In vel hendrerit nisi. Vestibulum eget risus velit.</p>
@@ -328,7 +328,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 mt30 wow fadeIn" data-wow-delay="1.4s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon"><img src="images/icons/badge.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/badge.svg') }}" alt="service" class="img-fluid"></div>
                     <div class="s-block-content">
                         <h4>Excellent Quality Delivered on Time</h4>
                         <p>In vel hendrerit nisi. Vestibulum eget risus velit.</p>
@@ -337,7 +337,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 mt30 wow fadeIn" data-wow-delay="1.7s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon"><img src="images/icons/tin.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/tin.svg') }}" alt="service" class="img-fluid"></div>
                     <div class="s-block-content">
                         <h4>Effective & Continuous Communication</h4>
                         <p>In vel hendrerit nisi. Vestibulum eget risus velit.</p>
@@ -370,7 +370,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="pricing-table mt60">
                     <div class="inner-table">
-                        <img src="images/icons/plan-1.svg" alt="Personal" />
+                        <img src="{{ url('assets/frontend/images/icons/plan-1.svg') }}" alt="Personal" />
                         <span class="title">Personal</span>
                         <p class="title-sub">Great For Small Business</p>
                         <h2><sup>$</sup> 79.99</h2>
@@ -391,7 +391,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="pricing-table best-plan mt60 bg-gradient4">
                     <div class="inner-table">
-                        <img src="images/icons/plan-2.svg" alt="Advance" />
+                        <img src="{{ url('assets/frontend/images/icons/plan-2.svg') }}" alt="Advance" />
                         <span class="title">Advance</span>
                         <p class="title-sub">Great For Small Business</p>
                         <h2><sup>$</sup> 79.99</h2>
@@ -412,7 +412,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="pricing-table mt60">
                     <div class="inner-table">
-                        <img src="images/icons/plan-3.svg" alt="Ultimate" />
+                        <img src="{{ url('assets/frontend/images/icons/plan-3.svg') }}" alt="Ultimate" />
                         <span class="title">Ultimate</span>
                         <p class="title-sub">Great For Small Business</p>
                         <h2><sup>$</sup> 79.99</h2>
@@ -450,7 +450,7 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".2s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="images/portfolio/image-1.jpg" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-1.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Creative </a></h4>
@@ -461,7 +461,7 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".4s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="images/portfolio/image-2.jpg" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-2.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Brochure Design</a></h4>
@@ -472,7 +472,7 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".6s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="images/portfolio/image-3.jpg" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-3.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Ecommerce Development</a></h4>
@@ -483,7 +483,7 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".8s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="images/portfolio/image-4.jpg" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-4.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Icon Pack</a></h4>
@@ -494,7 +494,7 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay="1s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="images/portfolio/image-5.jpg" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-5.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Smart Watch</a></h4>
@@ -505,7 +505,7 @@
             <div class="col-lg-4 wow fadeInUp" data-wow-delay="1.2s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image">
-                        <a href="#"><img src="images/portfolio/image-6.jpg" alt="portfolio" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ url('assets/frontend/images/portfolio/image-6.jpg') }}" alt="portfolio" class="img-fluid" /> </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Brochure Design</a></h4>
@@ -539,7 +539,7 @@
                 <div class="reviews-card pr-shadow">
                     <div class="row v-center">
                         <div class="col"> <span class="revbx-lr"><i class="fas fa-quote-left"></i></span> </div>
-                        <div class="col"> <span class="revbx-rl"><img src="images/client/envato.png" alt="review service logo"></span> </div>
+                        <div class="col"> <span class="revbx-rl"><img src="{{ url('assets/frontend/images/client/envato.png') }}" alt="review service logo"></span> </div>
                     </div>
                     <div class="review-text">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -565,7 +565,7 @@
                 <div class="reviews-card pr-shadow">
                     <div class="row v-center">
                         <div class="col"> <span class="revbx-lr"><i class="fas fa-quote-left"></i></span> </div>
-                        <div class="col"> <span class="revbx-rl"><img src="images/client/envato.png" alt="review service logo"></span> </div>
+                        <div class="col"> <span class="revbx-rl"><img src="{{ url('assets/frontend/images/client/envato.png') }}" alt="review service logo"></span> </div>
                     </div>
                     <div class="review-text">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -591,7 +591,7 @@
                 <div class="reviews-card pr-shadow">
                     <div class="row v-center">
                         <div class="col"> <span class="revbx-lr"><i class="fas fa-quote-left"></i></span> </div>
-                        <div class="col"> <span class="revbx-rl"><img src="images/client/envato.png" alt="review service logo"></span> </div>
+                        <div class="col"> <span class="revbx-rl"><img src="{{ url('assets/frontend/images/client/envato.png') }}" alt="review service logo"></span> </div>
                     </div>
                     <div class="review-text">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -631,10 +631,10 @@
             </div>
         </div>
     </div>
-    <div class="shape shape-a1"><img src="images/shape/shape-3.svg" alt="shape" /></div>
-    <div class="shape shape-a2"><img src="images/shape/shape-4.svg" alt="shape" /></div>
-    <div class="shape shape-a3"><img src="images/shape/shape-13.svg" alt="shape" /></div>
-    <div class="shape shape-a4"><img src="images/shape/shape-11.svg" alt="shape" /></div>
+    <div class="shape shape-a1"><img src="{{ url('assets/frontend/images/shape/shape-3.svg') }}" alt="shape" /></div>
+    <div class="shape shape-a2"><img src="{{ url('assets/frontend/images/shape/shape-4.svg') }}" alt="shape" /></div>
+    <div class="shape shape-a3"><img src="{{ url('assets/frontend/images/shape/shape-13.svg') }}" alt="shape" /></div>
+    <div class="shape shape-a4"><img src="{{ url('assets/frontend/images/shape/shape-11.svg') }}" alt="shape" /></div>
 </section>
 <!--End CTA-->
 @endsection

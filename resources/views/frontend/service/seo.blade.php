@@ -3,21 +3,19 @@
 @section('content')
 
 <!--Breadcrumb Area-->
-<section class="breadcrumb-areav2" data-background="{{ url('assets/frontend/images/banner/6.jpg') }}">
+<section class="breadcrumb-areav2" data-background="{{ url('assets/frontend/images/banner/9.jpg') }}">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <div class="bread-titlev2">
-                    <h1 class="wow fadeInUp" data-wow-delay=".2s">Need A Premium & Creative Website Designing?</h1>
-                    <p class="mt20 wow fadeInUp" data-wow-delay=".4s">From Startup to Enterprise be ready and don't worry about design and user experience.</p>
+                    <h1 class="wow fadeInUp" data-wow-delay=".2s">Professional Digital Marketing Services That Drive Results</h1>
+                    <p class="mt20 wow fadeInUp" data-wow-delay=".4s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. </p>
                     <a href="#" class="btn-main bg-btn2 lnk mt20 wow zoomInDown" data-wow-delay=".6s">Get Quote <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
 <div class="statistics-wrap bg-gradient5">
     <div class="container">
         <div class="row small t-ctr mt0">
@@ -69,45 +67,67 @@
     </div>
 </div>
 <!--End Hero-->
-
-
 <!--Start About-->
-<section class="service pad-tb">
+<section class="service pad-tb bg-gradient5">
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <div class="image-block upset bg-shape wow fadeIn">
-                    <img src="{{ url('assets/frontend/images/about/square-image-1.jpg') }}" alt="image" class="img-fluid" />
+                <div class="image-block wow fadeIn">
+                    <img src="{{ url('assets/frontend/images/service/digitalmarketing.png') }}" alt="image" class="img-fluid no-shadow" />
                 </div>
             </div>
             <div class="col-lg-8 block-1">
                 <div class="common-heading text-l pl25">
                     <span>Overview</span>
-                    <h2>Creative Web Design Service</h2>
+                    <h2>Digital Marketing Services for Growing Your Company</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry. </p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry.</p>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!--End About-->
-<!--Start Tech-->
-<div class="techonology-used-">
+
+<!--Start Key points-->
+<section class="service pad-tb light-dark">
     <div class="container">
-        <ul class="h-scroll tech-icons">
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon1.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon2.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon3.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon4.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon5.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon6.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon7.png') }}" alt="icon"></a></li>
-            <li><a href="#"><img src="{{ url('assets/frontend/images/icons/stack-icon8.png') }}" alt="icon"></a></li>
-        </ul>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="text-l service-desc- pr25">
+                    <h3 class="mb20">Online Marketing Services Proven to Increase Leads, Sales, & Revenue</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <ul class="service-point-2 mt20">
+                        <li># 800+ Mobile Delivered</li>
+                        <li># 200+ Team Strength</li>
+                        <li># User-Friendly Interface</li>
+                        <li># 400 Happy Clients</li>
+                        <li># 95% Repeat business</li>
+                        <li># Quality Service UX</li>
+                    </ul>
+                    <a href="#" class="btn-main bg-btn2 lnk mt30">Request A Quote <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="servie-key-points">
+                    <h4>Advantages of Digital Marketing</h4>
+                    <ul class="key-points mt20">
+                        <li>Strategize with The Valuable Data and Analytics</li>
+                        <li>Content Performance and Lead Generation</li>
+                        <li>Reduction in cost and raises standards</li>
+                        <li>Improved Conversion Rates</li>
+                        <li>More Cost Effective Than Traditional Marketing</li>
+                        <li>Higher Revenues</li>
+                        <li>Higher ROI from Your Campaigns</li>
+                        <li>Earn People’s Trust and Build Brand Reputation</li>
+                        <li>Know All About Your Competitors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<!--End Tech-->
+</section>
+<!--End Key points-->
 <!--Start Service-->
 <section class="service-block bg-gradient6 pad-tb">
     <div class="container">
@@ -121,51 +141,51 @@
             </div>
         </div>
         <div class="row upset link-hover">
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".2s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/logo-and') }}-branding.svg" alt="service" class="img-fluid" /></div>
-                    <h4>Graphic Designing Services</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="col-lg-6 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".2s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/seo.png') }}" alt="service" class="img-fluid" /></div>
+                    <div class="s-block-content-large">
+                        <h4>Search Engine Optimization</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".4s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/service2.svg') }}" alt="service" class="img-fluid" /></div>
-                    <h4>Responsive Web Designing</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="col-lg-6 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".4s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/smo.png') }}" alt="service" class="img-fluid" /></div>
+                    <div class="s-block-content-large">
+                        <h4>Social Media Marketing</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".6s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/service3.svg') }}" alt="service" class="img-fluid" /></div>
-                    <h4>Static Website Designing</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="col-lg-6 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".6s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/ppc.png') }}" alt="service" class="img-fluid" /></div>
+                    <div class="s-block-content-large">
+                        <h4>Pay per Click</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".8s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/service4.svg') }}" alt="service" class="img-fluid" /></div>
-                    <h4>Dynamic Website Designing</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="col-lg-6 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".8s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon-large"><img src="{{ url('assets/frontend/images/service/emails.png') }}" alt="service" class="img-fluid" /></div>
+                    <div class="s-block-content-large">
+                        <h4>Email Marketing</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay="1s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/service5.svg') }}" alt="service" class="img-fluid" /></div>
-                    <h4>Psd to HTML Service</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay="1.2s">
-                <div class="s-block">
-                    <div class="s-card-icon"><img src="{{ url('assets/frontend/images/icons/service6.svg') }}" alt="service" class="img-fluid" /></div>
-                    <h4>Website Redesign Service</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-            </div>
+
+
         </div>
         <div class="-cta-btn mt70">
-            <div class="free-cta-title v-center wow zoomInDown" data-wow-delay="1.3s">
+            <div class="free-cta-title v-center wow zoomInDown" data-wow-delay="1.1s">
                 <p>Hire a <span>Dedicated Developer</span></p>
                 <a href="#" class="btn-main bg-btn2 lnk">Hire Now<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
             </div>

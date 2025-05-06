@@ -26,4 +26,15 @@ Route::get('service/web-development', [App\Http\Controllers\Frontend\ServiceCont
 
 Route::get('service/app-development', [App\Http\Controllers\Frontend\ServiceController::class, 'appDevelopment'])->name('service.app');
 
+Route::get('service/seo-digital-marketing', [App\Http\Controllers\Frontend\ServiceController::class, 'seoDigitalMarketing'])->name('service.seo');
+
+Route::get('service/graphic-design', [App\Http\Controllers\Frontend\ServiceController::class, 'graphicDesign'])->name('service.graphic');
+
+
+// blog
+Route::get('blog', [App\Http\Controllers\Frontend\BlogController::class, 'index'])->name('blog.index');
+
+// contact us
+Route::get('contact-us', [App\Http\Controllers\Frontend\ContactController::class, 'index'])->name('contact.index');
+
 

@@ -1,7 +1,7 @@
 <header class="header-pr {{ Route::is('home') ? 'nav-bg-b' : 'nav-bg-w' }} main-header navfix fixed-top menu-white">
     <div class="container-fluid m-pad">
         <div class="menu-header">
-            <div class="dsk-logo"><a class="nav-brand" href="index.html">
+            <div class="dsk-logo"><a class="nav-brand" href="{{ route('home') }}" wire:navigate>
                     <img src="{{ url('assets/frontend/images/white-logo.png') }}" alt="Logo" class="mega-white-logo" />
                     <img src="{{ url('assets/frontend/images/logo.png') }}" alt="Logo" class="mega-darks-logo" />
                 </a>
@@ -15,11 +15,17 @@
                 <!-- mobile + desktop - sidebar menu- dark mode witch and button -->
                 <ul class="nav-list right-end-btn">
                     <li class="hidemobile"><a data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
-                    <li class="hidemobile"><a href="get-quote.html" class="btn-br bg-btn3 btshad-b2 lnk">Request A Quote <span class="circle"></span></a> </li>
+
+                    <li class="hidemobile">
+                        <a href="{{ route('contact.index') }}" wire:navigate class="btn-br bg-btn3 btshad-b2 lnk">Request A Quote <span class="circle"></span></a>
+                    </li>
+
                     <li class="hidedesktop darkmodeswitch">
                         <div class="switch-wrapper"> <label class="switch" for="niwax"> <input type="checkbox" id="niwax" /> <span class="slider round"></span> </label> </div>
                     </li>
+
                     <li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
+
                     <li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
                 </ul>
             </div>
@@ -30,7 +36,7 @@
             <!-- menu items -->
             <livewire:frontend.theme.menu className="first-nav" />
             <!-- menu items -->
-            
+
             <ul class="bottom-nav">
                 <li class="prb">
                     <a href="tel:+11111111111">

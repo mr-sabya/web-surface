@@ -19,4 +19,16 @@ class ServiceController extends Controller
     {
         return view('frontend.service.android');    
     }
+
+    // seo and digital marketing service
+    public function seoDigitalMarketing()
+    {
+        return view('frontend.service.seo');
+    }
+
+    // graphic design
+    public function graphicDesign()
+    {
+        return view('frontend.service.graphic');    
+    }
 }
