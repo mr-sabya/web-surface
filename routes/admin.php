@@ -13,4 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [App\Http\Controllers\Backend\HomeController::class, 'index'])->name('dashboard');
+Route::middleware(['auth', 'is_admin'])->group(function () {
+    Route::get('/', [App\Http\Controllers\Backend\HomeController::class, 'index'])->name('dashboard');
+
+    // general setting
+    Route::get('setting/general-setting', [App\Http\Controllers\Backend\SettingController::class, 'generalSetting'])->name('setting.general');
+});

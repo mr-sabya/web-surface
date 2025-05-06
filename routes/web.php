@@ -37,4 +37,8 @@ Route::get('blog', [App\Http\Controllers\Frontend\BlogController::class, 'index'
 // contact us
 Route::get('contact-us', [App\Http\Controllers\Frontend\ContactController::class, 'index'])->name('contact.index');
 
+// auth
+// show login form
+Route::get('login', [App\Http\Controllers\Frontend\Auth\LoginController::class, 'showLoginForm'])->name('login');
+
 

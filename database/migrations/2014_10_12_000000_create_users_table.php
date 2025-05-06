@@ -17,6 +17,15 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+
+            // Admin flag
+            $table->boolean('is_admin')->default(false);
+
+            // Optional profile-related fields
+            $table->string('phone')->nullable();
+            $table->string('avatar')->nullable(); // For profile pictures
+            $table->text('address')->nullable();
+
             $table->rememberToken();
             $table->timestamps();
         });

@@ -283,7 +283,10 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Account Setting</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Logout</a>
+
+                                <!-- log out -->
+                                <livewire:backend.auth.logout />
+                                <!-- log out -->
                             </li>
                         </div>
                     </ul>

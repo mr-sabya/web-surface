@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="{{ asset('assets/backend/css/kaiadmin.min.css') }}" />
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="{{ asset('assets/backend/css/demo.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/backend/css/custom.css') }}" />
 
     @livewireStyles
 </head>
