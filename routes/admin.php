@@ -42,5 +42,13 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
     // pages
     Route::get('website/{page}', [App\Http\Controllers\Backend\PageController::class, 'index'])->name('website.page');
+    
+    // services
+    Route::get('services', [App\Http\Controllers\Backend\ServiceController::class, 'index'])->name('service.index');
+
+    Route::get('service/create', [App\Http\Controllers\Backend\ServiceController::class, 'create'])->name('service.create');
+
+    Route::get('service/edit/{id}', [App\Http\Controllers\Backend\ServiceController::class, 'edit'])->name('service.edit');
+
 
 });

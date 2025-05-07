@@ -109,7 +109,7 @@
                                 <td>{{ $client->name }}</td>
                                 <td>{{ $client->website }}</td>
                                 <td>
-                                    <button class="btn btn-primary btn-sm" wire:click="editClient({{ $client->id }})"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="btn btn-info btn-sm" wire:click="editClient({{ $client->id }})"><i class="fas fa-pencil-alt"></i></button>
                                     <button class="btn btn-danger btn-sm" wire:click="confirmDelete({{ $client->id }})"><i class="fas fa-trash"></i></button>
                                 </td>
                             </tr>
