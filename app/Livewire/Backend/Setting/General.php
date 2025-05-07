@@ -16,7 +16,7 @@ class General extends Component
 
     public function mount()
     {
-        $setting = Setting::find(1);
+        $setting = Setting::first();
         $this->site_title = $setting->site_title;
         $this->tagline = $setting->tagline;
         $this->email = $setting->email;
@@ -40,7 +40,7 @@ class General extends Component
             'favicon' => 'nullable|image|max:1024',
         ]);
 
-        $setting = Setting::find(1);
+        $setting = Setting::first();
         $setting->site_title = $this->site_title;
         $setting->tagline = $this->tagline;
         $setting->email = $this->email;

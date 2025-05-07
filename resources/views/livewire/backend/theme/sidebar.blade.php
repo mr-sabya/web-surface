@@ -49,46 +49,43 @@
                                     <span class="sub-item">General</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="components/buttons.html">
-                                    <span class="sub-item">Buttons</span>
+
+                            <li class="{{ Route::is('admin.setting.seo') ? 'active' : '' }}">
+                                <a href="{{ route('admin.setting.seo') }}" wire:navigate>
+                                    <span class="sub-item">SEO</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="components/gridsystem.html">
-                                    <span class="sub-item">Grid System</span>
+
+                            <li class="{{ Route::is('admin.setting.maintenance') ? 'active' : '' }}">
+                                <a href="{{ route('admin.setting.maintenance') }}" wire:navigate>
+                                    <span class="sub-item">Maintenance</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="components/panels.html">
-                                    <span class="sub-item">Panels</span>
+
+                            <li class="{{ Route::is('admin.setting.analytics') ? 'active' : '' }}">
+                                <a href="{{ route('admin.setting.analytics') }}" wire:navigate>
+                                    <span class="sub-item">Analytics & Pixel</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="components/notifications.html">
-                                    <span class="sub-item">Notifications</span>
+
+                            <li class="{{ Route::is('admin.setting.currency') ? 'active' : '' }}">
+                                <a href="{{ route('admin.setting.currency') }}" wire:navigate>
+                                    <span class="sub-item">Currency & Language</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="components/sweetalert.html">
-                                    <span class="sub-item">Sweet Alert</span>
+
+                            <li class="{{ Route::is('admin.setting.email') ? 'active' : '' }}">
+                                <a href="{{ route('admin.setting.email') }}" wire:navigate>
+                                    <span class="sub-item">Email</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="components/font-awesome-icons.html">
-                                    <span class="sub-item">Font Awesome Icons</span>
+
+                            <li class="{{ Route::is('admin.setting.security') ? 'active' : '' }}">
+                                <a href="{{ route('admin.setting.security') }}" wire:navigate>
+                                    <span class="sub-item">Security</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="components/simple-line-icons.html">
-                                    <span class="sub-item">Simple Line Icons</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="components/typography.html">
-                                    <span class="sub-item">Typography</span>
-                                </a>
-                            </li>
+                        
                         </ul>
                     </div>
                 </li>

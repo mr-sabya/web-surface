@@ -22,6 +22,7 @@
     <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/frontend/css/responsive.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/frontend/css/darkmode.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/frontend/css/custom.css') }}" rel="stylesheet">
 
     @livewireStyles
 </head>
