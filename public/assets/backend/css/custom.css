@@ -14,3 +14,28 @@
     height: 100%;
     object-fit: contain;
 }
+
+
+/* page section */
+.pages .page-section{
+    position: relative;
+}
+
+.pages .page-section a{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translate(30%, -30%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.pages .page-section a i{
+    color: #000;
+}

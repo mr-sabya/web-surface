@@ -78,6 +78,23 @@
 
 
     @livewireScripts
+
+    <<!-- resources/views/layouts/app.blade.php -->
+        <script>
+            document.addEventListener('livewire:init', function() {
+                // Show the delete confirmation modal
+                Livewire.on('show-delete-modal', () => {
+                    $('#deleteModal').modal('show');
+                });
+
+                // Close the delete confirmation modal
+                Livewire.on('close-delete-modal', () => {
+                    $('#deleteModal').modal('hide');
+                });
+            });
+        </script>
+</body>
+
 </body>
 
 </html>

@@ -30,4 +30,17 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
     Route::get('setting/email-setting', [App\Http\Controllers\Backend\SettingController::class, 'emailSetting'])->name('setting.email');
 
     Route::get('setting/security-setting', [App\Http\Controllers\Backend\SettingController::class, 'securitySetting'])->name('setting.security');
+    
+    
+    
+
+    // banner
+    Route::get('website/banner', [App\Http\Controllers\Backend\BannerController::class, 'index'])->name('website.banner');
+
+    // client
+    Route::get('website/clients', [App\Http\Controllers\Backend\ClientController::class, 'index'])->name('website.client');
+
+    // pages
+    Route::get('website/{page}', [App\Http\Controllers\Backend\PageController::class, 'index'])->name('website.page');
+
 });

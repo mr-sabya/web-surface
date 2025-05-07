@@ -89,6 +89,29 @@
                         </ul>
                     </div>
                 </li>
+
+
+                <li class="nav-item {{ Route::is('admin.website.*') ? 'active submenu' : '' }}">
+                    <a data-bs-toggle="collapse" href="#webiste">
+                        <i class="fas fa-desktop"></i>
+                        <p>Website</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse {{ Route::is('admin.website.*') ? 'show' : '' }}" id="webiste">
+                        <ul class="nav nav-collapse">
+                            <li class="{{ Route::is('admin.website.page', 'home') ? 'active' : '' }}">
+                                <a href="{{ route('admin.website.page', 'home') }}" wire:navigate>
+                                    <span class="sub-item">Home Page</span>
+                                </a>
+                            </li>
+
+                   
+
+                            
+                        
+                        </ul>
+                    </div>
+                </li>
                 <li class="nav-item">
                     <a data-bs-toggle="collapse" href="#sidebarLayouts">
                         <i class="fas fa-th-list"></i>
