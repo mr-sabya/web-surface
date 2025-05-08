@@ -16,7 +16,6 @@
                     @endif
 
 
-
                     <!-- Form for Add/Edit -->
                     <form wire:submit.prevent="save">
                         <div class="mb-3">
