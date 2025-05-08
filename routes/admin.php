@@ -45,10 +45,16 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
     
     // services
     Route::get('services', [App\Http\Controllers\Backend\ServiceController::class, 'index'])->name('service.index');
-
+    
     Route::get('service/create', [App\Http\Controllers\Backend\ServiceController::class, 'create'])->name('service.create');
-
+    
     Route::get('service/edit/{id}', [App\Http\Controllers\Backend\ServiceController::class, 'edit'])->name('service.edit');
+    
+    Route::get('service/{id}', [App\Http\Controllers\Backend\ServiceController::class, 'show'])->name('service.show');
+    
+    
+    // technology
+    Route::get('technology', [App\Http\Controllers\Backend\TechnologyController::class, 'index'])->name('technology.index');
 
 
 });

@@ -37,9 +37,9 @@
                             <!-- Image Preview -->
                             <div class="preview">
                                 @if ($logoPreview)
-                                <img src="{{ asset('storage/' . $logoPreview) }}" alt="Current Logo" height="100">
+                                <img src="{{ asset('storage/' . $logoPreview) }}" alt="Client Logo">
                                 @elseif ($logo)
-                                <img src="{{ $logo->temporaryUrl() }}" alt="New Logo Preview" height="100">
+                                <img src="{{ $logo->temporaryUrl() }}" alt="Client Logo">
                                 @endif
                             </div>
                             <input type="file" id="logo" class="form-control" wire:model="logo">

@@ -61,8 +61,8 @@
                     <td>{{ $service->slug }}</td>
 
                     <td>
-                        <a href="{{ route('admin.service.edit', $service->id) }}" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></a>
-                        <a href="{{ route('admin.service.edit', $service->id) }}" class="btn btn-sm btn-info"><i class="fas fa-pencil-alt"></i></a>
+                        <a href="{{ route('admin.service.show', $service->id) }}" class="btn btn-sm btn-primary" wire:navigate><i class="fas fa-eye"></i></a>
+                        <a href="{{ route('admin.service.edit', $service->id) }}" class="btn btn-sm btn-info" wire:navigate><i class="fas fa-pencil-alt"></i></a>
                         <button wire:click="delete({{ $service->id }})" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>

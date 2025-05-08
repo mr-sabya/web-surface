@@ -91,13 +91,13 @@
                 </li>
 
 
-                <li class="nav-item {{ Route::is('admin.website.*') || Route::is('admin.service.*') ? 'active submenu' : '' }}">
+                <li class="nav-item {{ Route::is('admin.website.*') || Route::is('admin.service.*') || Route::is('admin.technology.*') ? 'active submenu' : '' }}">
                     <a data-bs-toggle="collapse" href="#webiste">
                         <i class="fas fa-desktop"></i>
                         <p>Website</p>
                         <span class="caret"></span>
                     </a>
-                    <div class="collapse {{ Route::is('admin.website.*') || Route::is('admin.service.*') ? 'show' : '' }}" id="webiste">
+                    <div class="collapse {{ Route::is('admin.website.*') || Route::is('admin.service.*') || Route::is('admin.technology.*') ? 'show' : '' }}" id="webiste">
                         <ul class="nav nav-collapse">
                             <li class="{{ Route::is('admin.website.page', 'home') ? 'active' : '' }}">
                                 <a href="{{ route('admin.website.page', 'home') }}" wire:navigate>
@@ -108,6 +108,12 @@
                             <li class="{{ Route::is('admin.service.index') ? 'active' : '' }}">
                                 <a href="{{ route('admin.service.index') }}" wire:navigate>
                                     <span class="sub-item">Services</span>
+                                </a>
+                            </li>
+
+                            <li class="{{ Route::is('admin.technology.index') ? 'active' : '' }}">
+                                <a href="{{ route('admin.technology.index') }}" wire:navigate>
+                                    <span class="sub-item">Technology</span>
                                 </a>
                             </li>
 

@@ -27,4 +27,11 @@ class ServiceController extends Controller
         $service = Service::findOrFail(intval($id));
         return view('backend.service.edit', compact('service'));    
     }
+
+    //show by ID
+    public function show($id)
+    {
+        $service = Service::findOrFail(intval($id));
+        return view('backend.service.show', compact('service'));    
+    }
 }
