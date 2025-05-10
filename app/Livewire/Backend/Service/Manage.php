@@ -13,6 +13,13 @@ class Manage extends Component
 
     public $serviceId;
     public $title, $slug, $heading, $sub_heading, $short_description, $description_title, $description, $image, $newImage;
+    public $feature_section_title, $feature_section_sub_title, $feature_section_text;
+    public $process_section_title, $process_section_sub_title, $process_section_text;
+    public $addon_section_title, $addon_section_sub_title, $addon_section_text;
+    public $pricing_section_title, $pricing_section_sub_title, $pricing_section_text;
+    public $portfolio_section_title, $portfolio_section_sub_title, $portfolio_section_text;
+    public $testimonial_section_title, $testimonial_section_sub_title, $testimonial_section_text;
+
 
     public function mount($serviceId = null)
     {
@@ -28,6 +35,24 @@ class Manage extends Component
             $this->description_title = $service->description_title;
             $this->description = $service->description;
             $this->image = $service->image;
+            $this->feature_section_title = $service->feature_section_title;
+            $this->feature_section_sub_title = $service->feature_section_sub_title;
+            $this->feature_section_text = $service->feature_section_text;
+            $this->process_section_title = $service->process_section_title;
+            $this->process_section_sub_title = $service->process_section_sub_title;
+            $this->process_section_text = $service->process_section_text;
+            $this->addon_section_title = $service->addon_section_title;
+            $this->addon_section_sub_title = $service->addon_section_sub_title;
+            $this->addon_section_text = $service->addon_section_text;
+            $this->pricing_section_title = $service->pricing_section_title;
+            $this->pricing_section_sub_title = $service->pricing_section_sub_title;
+            $this->pricing_section_text = $service->pricing_section_text;
+            $this->portfolio_section_title = $service->portfolio_section_title;
+            $this->portfolio_section_sub_title = $service->portfolio_section_sub_title;
+            $this->portfolio_section_text = $service->portfolio_section_text;
+            $this->testimonial_section_title = $service->testimonial_section_title;
+            $this->testimonial_section_sub_title = $service->testimonial_section_sub_title;
+            $this->testimonial_section_text = $service->testimonial_section_text;
         }
     }
 
@@ -47,6 +72,25 @@ class Manage extends Component
             'description_title' => 'required',
             'description' => 'required',
             'newImage' => $this->serviceId ? 'nullable|image' : 'required|image',
+            'feature_section_title' => 'nullable|string|max:255',
+            'feature_section_sub_title' => 'nullable|string|max:255',
+            'feature_section_text' => 'nullable|string|max:255',
+            'process_section_title' => 'nullable|string|max:255',
+            'process_section_sub_title' => 'nullable|string|max:255',
+            'process_section_text' => 'nullable|string|max:255',
+            'addon_section_title' => 'nullable|string|max:255',
+            'addon_section_sub_title' => 'nullable|string|max:255',
+            'addon_section_text' => 'nullable|string|max:255',
+            'pricing_section_title' => 'nullable|string|max:255',
+            'pricing_section_sub_title' => 'nullable|string|max:255',
+            'pricing_section_text' => 'nullable|string|max:255',
+            'portfolio_section_title' => 'nullable|string|max:255',
+            'portfolio_section_sub_title' => 'nullable|string|max:255',
+            'portfolio_section_text' => 'nullable|string|max:255',
+            'testimonial_section_title' => 'nullable|string|max:255',
+            'testimonial_section_sub_title' => 'nullable|string|max:255',
+            'testimonial_section_text' => 'nullable|string|max:255',
+
         ];
     }
 
@@ -62,6 +106,25 @@ class Manage extends Component
             'short_description' => $this->short_description,
             'description_title' => $this->description_title,
             'description' => $this->description,
+            'feature_section_title' => $this->feature_section_title,
+            'feature_section_sub_title' => $this->feature_section_sub_title,
+            'feature_section_text' => $this->feature_section_text,
+            'process_section_title' => $this->process_section_title,
+            'process_section_sub_title' => $this->process_section_sub_title,
+            'process_section_text' => $this->process_section_text,
+            'addon_section_title' => $this->addon_section_title,
+            'addon_section_sub_title' => $this->addon_section_sub_title,
+            'addon_section_text' => $this->addon_section_text,
+            'pricing_section_title' => $this->pricing_section_title,
+            'pricing_section_sub_title' => $this->pricing_section_sub_title,
+            'pricing_section_text' => $this->pricing_section_text,
+            'portfolio_section_title' => $this->portfolio_section_title,
+            'portfolio_section_sub_title' => $this->portfolio_section_sub_title,
+            'portfolio_section_text' => $this->portfolio_section_text,
+            'testimonial_section_title' => $this->testimonial_section_title,
+            'testimonial_section_sub_title' => $this->testimonial_section_sub_title,
+            'testimonial_section_text' => $this->testimonial_section_text,
+            
         ];
 
         if ($this->newImage) {
@@ -77,7 +140,7 @@ class Manage extends Component
             $this->dispatch('toast', ['message' => 'Service created']);
         }
 
-        return redirect()->route('admin.service.index');
+        return $this->redirect(route('admin.service.index'), navigate: true);
     }
 
     public function render()

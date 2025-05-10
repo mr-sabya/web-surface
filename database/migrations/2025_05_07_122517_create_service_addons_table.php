@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::create('service_addons', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('text');
+            $table->text('text');
             $table->string('icon');
             $table->foreignIdFor(Service::class);
             $table->timestamps();
