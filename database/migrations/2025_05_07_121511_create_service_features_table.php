@@ -17,7 +17,9 @@ return new class extends Migration
             $table->string('title');
             $table->text('text');
             $table->string('icon');
-            $table->foreignIdFor(Service::class);
+            $table->foreignIdFor(Service::class)
+                ->constrained()
+                ->cascadeOnDelete();;
             $table->timestamps();
         });
     }
