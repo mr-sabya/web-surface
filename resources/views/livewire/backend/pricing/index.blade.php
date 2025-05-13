@@ -82,7 +82,7 @@
                     </div>
                 </div>
 
-                <table class="table table-bordered">
+                <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -108,10 +108,19 @@
                                 @endif
                             </td>
                             <td>
-                                <button wire:click="edit({{ $pricing->id }})" class="btn btn-sm btn-info">Edit</button>
-                                <button wire:click="delete({{ $pricing->id }})" class="btn btn-sm btn-danger">Delete</button>
+                                <button wire:click="selectPricing({{ $pricing->id }})" class="btn btn-sm btn-info">Feature</button>
+                                <button wire:click="edit({{ $pricing->id }})" class="btn btn-sm btn-info"><i class="fas fa-pencil-alt"></i></button>
+                                <button wire:click="delete({{ $pricing->id }})" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
                             </td>
                         </tr>
+
+                        @if($selectPricingId == $pricing->id)
+                        <tr>
+                            <td colspan="6">
+                                <livewire:backend.pricing-feature.index pricingId="{{ $pricing->id }}" />
+                            </td>
+                        </tr>
+                        @endif
                         @empty
                         <tr>
                             <td colspan="6" class="text-center">No data found.</td>

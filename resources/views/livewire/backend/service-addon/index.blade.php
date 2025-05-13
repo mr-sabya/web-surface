@@ -64,13 +64,12 @@
                     </div>
                 </div>
 
-                <table class="table table-bordered">
+                <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Title</th>
-                            <th>Text</th>
+                            <th class="text-center" style="width: 100px;">#</th>
                             <th>Icon</th>
+                            <th>Title</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -78,8 +77,6 @@
                         @forelse($addons as $index => $addon)
                         <tr>
                             <td class="text-center">{{ ($addons->currentPage() - 1) * $addons->perPage() + $index + 1 }}</td>
-                            <td>{{ $addon->title }}</td>
-                            <td>{{ $addon->text }}</td>
                             <td>
                                 @if($addon->icon)
                                 <img src="{{ asset('storage/' . $addon->icon) }}" alt="icon" width="30">
@@ -87,9 +84,10 @@
                                 N/A
                                 @endif
                             </td>
+                            <td>{{ $addon->title }}</td>
                             <td>
-                                <button wire:click="edit({{ $addon->id }})" class="btn btn-sm btn-info">Edit</button>
-                                <button wire:click="delete({{ $addon->id }})" class="btn btn-sm btn-danger">Delete</button>
+                                <button wire:click="edit({{ $addon->id }})" class="btn btn-sm btn-info"><i class="fas fa-pencil-alt"></i></button>
+                                <button wire:click="delete({{ $addon->id }})" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
                             </td>
                         </tr>
                         @empty

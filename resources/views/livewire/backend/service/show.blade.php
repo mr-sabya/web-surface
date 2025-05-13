@@ -2,8 +2,9 @@
     <div class="col-lg-12">
         <div class="card">
 
-            <div class="card-header">
+            <div class="card-header d-flex justify-content-between align-items-center">
                 <h4 class="m-0">Service Details</h4>
+                <a href="{{ route('admin.service.edit', $service->id) }}" class="btn btn-primary btn-sm" wire:navigate><i class="fas fa-pencil-alt me-2"></i> Edit</a>
             </div>
             <div class="card-body">
 

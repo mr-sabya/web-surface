@@ -69,9 +69,8 @@
                     <thead>
                         <tr>
                             <th class="text-center" style="width: 100px;">#</th>
-                            <th>Image</th>
+                            <th class="text-center" style="width: 100px;">Image</th>
                             <th>Title</th>
-                            <th>Text</th>
                             <th width="120">Actions</th>
                         </tr>
                     </thead>
@@ -83,11 +82,11 @@
                                 <img src="{{ asset('storage/' . $process->image) }}" width="50">
                             </td>
                             <td>{{ $process->title }}</td>
-                            <td>{{ $process->text }}</td>
                             <td>
-                                <button class="btn btn-sm btn-warning" wire:click="edit({{ $process->id }})">Edit</button>
-                                <button class="btn btn-sm btn-danger" wire:click="delete({{ $process->id }})"
-                                    onclick="confirm('Are you sure?') || event.stopImmediatePropagation()">Delete</button>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-sm btn-info" wire:click="edit({{ $process->id }})"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="btn btn-sm btn-danger" wire:click="delete({{ $process->id }})"><i class="fas fa-trash"></i></button>
+                                </div>
                             </td>
                         </tr>
                         @empty

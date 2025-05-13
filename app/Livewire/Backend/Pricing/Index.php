@@ -16,6 +16,7 @@ class Index extends Component
     public $pricingIdBeingUpdated = null;
     public $perPage = 10;
     public $search = '';
+    public $selectPricingId = null;
 
     public function mount($serviceId)
     {
@@ -89,6 +90,11 @@ class Index extends Component
     public function delete($id)
     {
         Pricing::destroy($id);
+    }
+
+    public function selectPricing($pricingId)
+    {
+        $this->selectPricingId = $this->selectPricingId === $pricingId ? null : $pricingId;
     }
 
     public function render()
