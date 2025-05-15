@@ -61,5 +61,10 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
     Route::get('portfolio/create', [App\Http\Controllers\Backend\PortfolioController::class, 'create'])->name('portfolio.create');
     Route::get('portfolio/edit/{id}', [App\Http\Controllers\Backend\PortfolioController::class, 'edit'])->name('portfolio.edit');
 
+    // testimonial
+    Route::get('testimonials', [App\Http\Controllers\Backend\TestimonialController::class, 'index'])->name('testimonial.index');
+    Route::get('testimonial/create', [App\Http\Controllers\Backend\TestimonialController::class, 'create'])->name('testimonial.create');
+    Route::get('testimonial/edit/{id}', [App\Http\Controllers\Backend\TestimonialController::class, 'edit'])->name('testimonial.edit');
+
 
 });
