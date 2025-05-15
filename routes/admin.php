@@ -56,5 +56,10 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
     // technology
     Route::get('technology', [App\Http\Controllers\Backend\TechnologyController::class, 'index'])->name('technology.index');
 
+    // portfolio
+    Route::get('portfolio', [App\Http\Controllers\Backend\PortfolioController::class, 'index'])->name('portfolio.index');
+    Route::get('portfolio/create', [App\Http\Controllers\Backend\PortfolioController::class, 'create'])->name('portfolio.create');
+    Route::get('portfolio/edit/{id}', [App\Http\Controllers\Backend\PortfolioController::class, 'edit'])->name('portfolio.edit');
+
 
 });

@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="{{ asset('assets/backend/css/plugins.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/backend/css/kaiadmin.min.css') }}" />
 
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link rel="stylesheet" href="{{ asset('assets/backend/css/custom.css') }}" />
 
@@ -72,6 +74,9 @@
 
     <!-- Sweet Alert -->
     <script data-navigate-once src="{{ asset('assets/backend/js/plugin/sweetalert/sweetalert.min.js') }}"></script>
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
     <!-- Kaiadmin JS -->
     <script src="{{ asset('assets/backend/js/kaiadmin.min.js') }}"></script>

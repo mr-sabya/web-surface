@@ -31,6 +31,8 @@ Route::get('service/seo-digital-marketing', [App\Http\Controllers\Frontend\Servi
 Route::get('service/graphic-design', [App\Http\Controllers\Frontend\ServiceController::class, 'graphicDesign'])->name('service.graphic');
 
 
+
+
 // blog
 Route::get('blog', [App\Http\Controllers\Frontend\BlogController::class, 'index'])->name('blog.index');
 
