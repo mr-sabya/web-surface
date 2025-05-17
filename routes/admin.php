@@ -39,6 +39,9 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
     // client
     Route::get('website/clients', [App\Http\Controllers\Backend\ClientController::class, 'index'])->name('website.client');
+    
+    // about section
+    Route::get('website/about-section', [App\Http\Controllers\Backend\AboutSectionController::class, 'index'])->name('website.about-section');
 
     // pages
     Route::get('website/{page}', [App\Http\Controllers\Backend\PageController::class, 'index'])->name('website.page');
@@ -65,6 +68,7 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
     Route::get('testimonials', [App\Http\Controllers\Backend\TestimonialController::class, 'index'])->name('testimonial.index');
     Route::get('testimonial/create', [App\Http\Controllers\Backend\TestimonialController::class, 'create'])->name('testimonial.create');
     Route::get('testimonial/edit/{id}', [App\Http\Controllers\Backend\TestimonialController::class, 'edit'])->name('testimonial.edit');
+
 
 
 });
