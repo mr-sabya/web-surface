@@ -63,6 +63,12 @@
     </div>
 
     <div class="col-lg-12">
+        @if($about)
         <livewire:backend.about-section-feature.index aboutSectionId="{{ $about->id }}" />
+        @else
+        <div class="alert alert-warning">
+            <strong>Warning!</strong> No about section found. Please create an about section first.
+        </div>
+        @endif
     </div>
 </div>

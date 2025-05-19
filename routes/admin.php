@@ -43,6 +43,9 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
     // about section
     Route::get('website/about-section', [App\Http\Controllers\Backend\AboutSectionController::class, 'index'])->name('website.about-section');
 
+    // why choose us
+    Route::get('website/why-choose-us', [App\Http\Controllers\Backend\WhyChooseSectionController::class, 'index'])->name('website.why-choose-us');
+
     // pages
     Route::get('website/{page}', [App\Http\Controllers\Backend\PageController::class, 'index'])->name('website.page');
     
