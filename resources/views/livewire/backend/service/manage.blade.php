@@ -58,6 +58,20 @@
                             <input type="file" wire:model="newImage" class="form-control">
                             @error('newImage') <span class="text-danger">{{ $message }}</span>@enderror
                         </div>
+                        <div class="mb-3">
+                            <label>Banner Image</label>
+                            <div class="preview" style="height: 300px;">
+                                @if ($newBannerImage)
+                                <img src="{{ $newBannerImage->temporaryUrl() }}">
+                                @elseif ($image)
+                                <img src="{{ asset('storage/' . $banner_image) }}">
+                                @endif
+                            </div>
+                            <input type="file" wire:model="newBannerImage" class="form-control">
+                            @error('newBannerImage') <span class="text-danger">{{ $message }}</span>@enderror
+                        </div>
+
+
 
 
                     </div>

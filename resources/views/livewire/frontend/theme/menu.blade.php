@@ -5,7 +5,7 @@
     <li>
         <a href="{{ route('about.index') }}" class="menu-links" wire:navigate>About Us</a>
     </li>
-   
+
     <li class="sbmenu rpdropdown">
         <a href="#" class="menu-links">Services</a>
         <div class="nx-dropdown menu-dorpdown">
@@ -13,10 +13,14 @@
                 <div class="sub-menu-center-block">
                     <div class="sub-menu-column smfull">
                         <ul>
-                            <li><a href="{{ route('service.web') }}" wire:navigate>Wed Development</a> </li>
-                            <li><a href="{{ route('service.app') }}" wire:navigate>Android App Development</a> </li>
-                            <li><a href="{{ route('service.seo') }}" wire:navigate>SEO & Digital Marketing</a> </li>
-                            <li><a href="{{ route('service.graphic') }}" wire:navigate>Graphic Design</a> </li>
+                            @foreach ($services as $service)
+                            <li>
+                                <a href="{{ route('service.show', $service->slug) }}" wire:navigate>
+                                    {{ $service->title }}
+                                </a>
+                            </li>
+                            @endforeach
+                            
                         </ul>
                     </div>
                 </div>

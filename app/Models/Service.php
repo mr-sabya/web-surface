@@ -19,6 +19,7 @@ class Service extends Model
         'description_title',
         'description',
         'image',
+        'banner_image',
 
         // Feature Section
         'feature_section_title',
@@ -68,5 +69,42 @@ class Service extends Model
     public function technologies()
     {
         return $this->belongsToMany(Technology::class);
+    }
+
+    // features
+    public function features()
+    {
+        return $this->hasMany(ServiceFeature::class);
+    }
+    
+    // processes
+    public function processes()
+    {
+        return $this->hasMany(ServiceProcess::class);
+    }
+
+    // addons
+    public function addons()
+    {
+        return $this->hasMany(ServiceAddon::class);
+    }
+
+    // pricing
+    public function pricings()
+    {
+        return $this->hasMany(Pricing::class);
+    }
+
+
+    // portfolios
+    public function portfolios()
+    {
+        return $this->hasMany(Portfolio::class);
+    }
+
+    // testimonials
+    public function testimonials()
+    {
+        return $this->hasMany(Testimonial::class);
     }
 }

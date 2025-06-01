@@ -3,6 +3,7 @@
 namespace App\Livewire\Frontend\Home\Service;
 
 use App\Models\OurServiceSection;
+use App\Models\Service;
 use Livewire\Component;
 
 class Index extends Component
@@ -11,6 +12,7 @@ class Index extends Component
     {
         return view('livewire.frontend.home.service.index', [
             'service_section' => OurServiceSection::first(),
+            'services' => Service::orderBy('created_at', 'desc')->get(),
         ]);
     }
 }

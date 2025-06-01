@@ -21,14 +21,16 @@ Route::get('about-us', [App\Http\Controllers\Frontend\AboutController::class, 'i
 // portfolio
 Route::get('portfolio', [App\Http\Controllers\Frontend\PortfolioController::class, 'index'])->name('portfolio.index');
 
-// services
-Route::get('service/web-development', [App\Http\Controllers\Frontend\ServiceController::class, 'webDevelopment'])->name('service.web');
+// services from database
+Route::get('service/{slug}', [App\Http\Controllers\Frontend\ServiceController::class, 'show'])->name('service.show');
 
-Route::get('service/app-development', [App\Http\Controllers\Frontend\ServiceController::class, 'appDevelopment'])->name('service.app');
+// Route::get('service/web-development', [App\Http\Controllers\Frontend\ServiceController::class, 'webDevelopment'])->name('service.web');
 
-Route::get('service/seo-digital-marketing', [App\Http\Controllers\Frontend\ServiceController::class, 'seoDigitalMarketing'])->name('service.seo');
+// Route::get('service/app-development', [App\Http\Controllers\Frontend\ServiceController::class, 'appDevelopment'])->name('service.app');
 
-Route::get('service/graphic-design', [App\Http\Controllers\Frontend\ServiceController::class, 'graphicDesign'])->name('service.graphic');
+// Route::get('service/seo-digital-marketing', [App\Http\Controllers\Frontend\ServiceController::class, 'seoDigitalMarketing'])->name('service.seo');
+
+// Route::get('service/graphic-design', [App\Http\Controllers\Frontend\ServiceController::class, 'graphicDesign'])->name('service.graphic');
 
 
 

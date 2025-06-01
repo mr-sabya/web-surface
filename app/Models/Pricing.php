@@ -24,4 +24,10 @@ class Pricing extends Model
     {
         return $this->belongsTo(Service::class);
     }
+
+    // features
+    public function features()
+    {
+        return $this->hasMany(PricingFeature::class);
+    }
 }

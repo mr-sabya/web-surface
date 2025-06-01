@@ -117,7 +117,7 @@
                         @if($selectPricingId == $pricing->id)
                         <tr>
                             <td colspan="6">
-                                <livewire:backend.pricing-feature.index pricingId="{{ $pricing->id }}" />
+                                <livewire:backend.pricing-feature.index :pricingId="$pricing->id" :key="'pricing-feature-'.$pricing->id" />
                             </td>
                         </tr>
                         @endif

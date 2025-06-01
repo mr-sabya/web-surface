@@ -14,6 +14,9 @@ class Manage extends Component
 
     public $serviceId;
     public $title, $slug, $heading, $sub_heading, $short_description, $description_title, $description, $image, $newImage;
+    // for banner_image
+    public $banner_image, $newBannerImage;
+
     public $feature_section_title, $feature_section_sub_title, $feature_section_text;
     public $process_section_title, $process_section_sub_title, $process_section_text;
     public $addon_section_title, $addon_section_sub_title, $addon_section_text;
@@ -56,6 +59,9 @@ class Manage extends Component
             $this->testimonial_section_sub_title = $service->testimonial_section_sub_title;
             $this->testimonial_section_text = $service->testimonial_section_text;
 
+            // for banner_image
+            $this->banner_image = $service->banner_image;
+
             $this->technologies = $service->technologies->pluck('id')->toArray();
         }
     }
@@ -94,6 +100,9 @@ class Manage extends Component
             'testimonial_section_title' => 'nullable|string|max:255',
             'testimonial_section_sub_title' => 'nullable|string|max:255',
             'testimonial_section_text' => 'nullable|string|max:255',
+            'technologies' => 'array',
+            'technologies.*' => 'exists:technologies,id',
+            'newBannerImage' => $this->serviceId ? 'nullable|image' : 'required|image',
 
         ];
     }
@@ -134,6 +143,9 @@ class Manage extends Component
         if ($this->newImage) {
             $data['image'] = $this->newImage->store('services', 'public');
         }
+        if ($this->newBannerImage) {
+            $data['banner_image'] = $this->newBannerImage->store('services/banner', 'public');
+        }
 
         if ($this->serviceId) {
             $service = Service::findOrFail($this->serviceId);
@@ -141,6 +153,7 @@ class Manage extends Component
             $this->dispatch('toast', ['message' => 'Service updated']);
         } else {
             $data['image'] = $data['image'] ?? null;
+            $data['banner_image'] = $data['banner_image'] ?? null;
             $service = Service::create($data);
             $this->dispatch('toast', ['message' => 'Service created']);
         }

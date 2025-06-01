@@ -3,3 +3,7 @@
     padding-bottom: 40px !important;
     height: auto !important;
 }
+
+.pricing-table .inner-table h2{
+    font-size: 24px !important;
+}
