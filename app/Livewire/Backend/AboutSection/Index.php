@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class Index extends Component
 {
-     public $about;
+    public $about;
 
     public $title_span;
     public $title;
@@ -30,7 +30,7 @@ class Index extends Component
             $this->button_link = $this->about->button_link;
             $this->button_icon = $this->about->button_icon;
             $this->button_target = $this->about->button_target;
-        }else{
+        } else {
             // get from model default attributes
             $this->title_span = (new AboutSection())->getAttribute('title_span');
             $this->title = (new AboutSection())->getAttribute('title');

@@ -46,6 +46,13 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
     // why choose us
     Route::get('website/why-choose-us', [App\Http\Controllers\Backend\WhyChooseSectionController::class, 'index'])->name('website.why-choose-us');
 
+    // our service section
+    Route::get('website/our-service-section', [App\Http\Controllers\Backend\OurServiceSectionController::class, 'index'])->name('website.our-service-section');
+
+    // portfolio section
+    Route::get('website/portfolio-section', [App\Http\Controllers\Backend\PortfolioSectionController::class, 'index'])->name('website.portfolio-section');
+
+
     // pages
     Route::get('website/{page}', [App\Http\Controllers\Backend\PageController::class, 'index'])->name('website.page');
     
