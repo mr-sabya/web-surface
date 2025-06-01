@@ -62,4 +62,11 @@ class Service extends Model
             }
         });
     }
+
+
+    // technologies
+    public function technologies()
+    {
+        return $this->belongsToMany(Technology::class);
+    }
 }

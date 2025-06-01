@@ -1,12 +1,12 @@
 <section class="service-section-app pad-tb dark-bg2">
-    <div class="sctxt">App Development</div>
+    <div class="sctxt">{{ $service_section->section_text }}</div>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="common-heading ptag">
-                    <span>Service</span>
-                    <h2>Our Services</h2>
-                    <p class="mb30">We think big and have hands in all leading technology platforms to provide you wide array of services.</p>
+                    <span>{{ $service_section->title }}</span>
+                    <h2>{{ $service_section->subtitle }}</h2>
+                    <p class="mb30">{{ $service_section->text }}</p>
                 </div>
             </div>
         </div>

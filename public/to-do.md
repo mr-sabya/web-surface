@@ -7,4 +7,7 @@
 - [ ] Final testing and deployment
 
 
-- [ ] Banner Section dynamic
+- [x] Banner Section dynamic
+- [x] Client Slider Dynamic
+- [x] About Section Dynamic
+- [ ] our Service Section Dynamic

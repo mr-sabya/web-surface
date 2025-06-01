@@ -198,6 +198,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Technology</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Pricing Section Title</label>
+                            <select wire:model="technologies" class="form-control" multiple>
+                                <option value="">Select Technology</option>
+                                @foreach($technologyList as $technology)
+                                    <option value="{{ $technology->id }}">{{ $technology->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
 
 

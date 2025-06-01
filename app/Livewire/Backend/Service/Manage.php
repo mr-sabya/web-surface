@@ -3,6 +3,7 @@
 namespace App\Livewire\Backend\Service;
 
 use App\Models\Service;
+use App\Models\Technology;
 use Illuminate\Support\Str;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -19,6 +20,7 @@ class Manage extends Component
     public $pricing_section_title, $pricing_section_sub_title, $pricing_section_text;
     public $portfolio_section_title, $portfolio_section_sub_title, $portfolio_section_text;
     public $testimonial_section_title, $testimonial_section_sub_title, $testimonial_section_text;
+    public $technologies = [];
 
 
     public function mount($serviceId = null)
@@ -53,6 +55,8 @@ class Manage extends Component
             $this->testimonial_section_title = $service->testimonial_section_title;
             $this->testimonial_section_sub_title = $service->testimonial_section_sub_title;
             $this->testimonial_section_text = $service->testimonial_section_text;
+
+            $this->technologies = $service->technologies->pluck('id')->toArray();
         }
     }
 
@@ -124,7 +128,7 @@ class Manage extends Component
             'testimonial_section_title' => $this->testimonial_section_title,
             'testimonial_section_sub_title' => $this->testimonial_section_sub_title,
             'testimonial_section_text' => $this->testimonial_section_text,
-            
+
         ];
 
         if ($this->newImage) {
@@ -132,12 +136,18 @@ class Manage extends Component
         }
 
         if ($this->serviceId) {
-            Service::findOrFail($this->serviceId)->update($data);
+            $service = Service::findOrFail($this->serviceId);
+            $service->update($data);
             $this->dispatch('toast', ['message' => 'Service updated']);
         } else {
             $data['image'] = $data['image'] ?? null;
-            Service::create($data);
+            $service = Service::create($data);
             $this->dispatch('toast', ['message' => 'Service created']);
+        }
+
+        // sync technologies
+        if ($this->technologies) {
+            $service->technologies()->sync($this->technologies);
         }
 
         return $this->redirect(route('admin.service.index'), navigate: true);
@@ -145,6 +155,8 @@ class Manage extends Component
 
     public function render()
     {
-        return view('livewire.backend.service.manage');
+        return view('livewire.backend.service.manage', [
+            'technologyList' => Technology::all(),
+        ]);
     }
 }
