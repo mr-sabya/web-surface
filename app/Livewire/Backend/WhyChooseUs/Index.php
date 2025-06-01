@@ -4,16 +4,20 @@ namespace App\Livewire\Backend\WhyChooseUs;
 
 use App\Models\WhyChooseUs;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class Index extends Component
 {
+    use WithFileUploads;
+
+
     public $model;
 
     public $section_heading, $title_normal, $title_highlighted, $title_suffix, $description;
 
     public $cta_title_prefix, $cta_title_highlight, $cta_title_suffix, $cta_description, $cta_button_text;
 
-    public $image, $image_text;
+    public $image, $newImage, $image_text;
 
     public function mount()
     {
@@ -42,16 +46,25 @@ class Index extends Component
             'cta_description' => 'nullable|string',
             'cta_button_text' => 'nullable|string|max:255',
 
-            'image' => 'nullable|string|max:255',
+            'newImage' => 'nullable|image|max:2048', // Validate new image upload
             'image_text' => 'nullable|string|max:255',
         ]);
+
+        // Handle image upload if newImage is provided
+        // Handle image upload if newImage is provided
+        if ($this->newImage) {
+            $validated['image'] = $this->newImage->store('why_choose_us', 'public'); // Store uploaded file
+        } else {
+            $validated['image'] = $this->model ? $this->model->image : null; // Use existing image if available
+        }
 
         if ($this->model) {
             $this->model->update($validated);
         } else {
-            $this->model = WhyChooseUs::create($this->attributes); // Save default attributes
-            $this->fill($this->attributes); // Refresh form with saved values
+            $this->model = WhyChooseUs::create($validated); // Use validated data, not $this->attributes
+            $this->fill($this->model->toArray()); // Refresh form with saved model values
         }
+
 
         session()->flash('message', 'Why Choose Us section updated successfully.');
     }

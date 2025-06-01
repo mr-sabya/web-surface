@@ -43,7 +43,7 @@ class WhyChooseUs extends Model
         'cta_button_text' => 'Request A Quote',
 
         'image' => 'images/why-choose-us.png',
-        'image_text' => 'Proud to be recognized by top tech portals.',
+        'image_text' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
     ];
 
     public function features()
