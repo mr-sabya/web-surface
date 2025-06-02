@@ -32,7 +32,7 @@
                         </ul>
                     </div>
                     <p class="mt20">{{ $service->short_description }}</p>
-                    <a href="javascript:void(0)" class="mt20 link-prbs">Read More <i class="fas fa fa-arrow-circle-right"></i></a>
+                    <a href="{{ route('service.show', $service->slug) }}" wire:navigate class="mt20 link-prbs">Read More <i class="fas fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             @endforeach

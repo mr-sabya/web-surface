@@ -118,4 +118,8 @@
         <button type="submit" class="btn btn-primary">Save Changes</button>
 
     </form>
+    
+    <div class="mt-5">
+        <livewire:backend.why-choose-us-feature.index whyChooseUsId="{{ $model->id }}" />
+    </div>
 </div>

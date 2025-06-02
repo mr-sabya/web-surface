@@ -19,6 +19,7 @@ return new class extends Migration
                 ->cascadeOnDelete();
             $table->string('title');
             $table->text('description')->nullable();
+            $table->string('icon')->nullable(); // Optional: Add an icon field if needed
             $table->timestamps();
         });
     }

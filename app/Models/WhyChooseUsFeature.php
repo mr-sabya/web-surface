@@ -9,8 +9,18 @@ class WhyChooseUsFeature extends Model
 {
     use HasFactory;
 
-    public function section()
+    protected $fillable = [
+        'why_choose_us_id',
+        'title',
+        'description',
+        'icon', // as image
+    ];
+
+    /**
+     * Get the parent WhyChooseUs entry.
+     */
+    public function whyChooseUs()
     {
-        return $this->belongsTo(WhyChooseUs::class, 'why_choose_us_section_id');
+        return $this->belongsTo(WhyChooseUs::class);
     }
 }

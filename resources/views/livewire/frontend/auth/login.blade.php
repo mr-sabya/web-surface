@@ -25,7 +25,13 @@
 
             <div class="fieldsets row mt20">
                 <div class="col-md-6 form-group v-center">
-                    <button type="submit" class="lnk btn-main bg-btn">Submit <span class="circle"></span></button>
+
+                    <button type="submit" class="lnk btn-main bg-btn" wire:target="login" wire:loading.attr="disabled">
+                        <span wire:loading.remove wire:target="login">Submit</span>
+                        <span wire:loading wire:target="login">Login......</span>
+                        <span class="circle"></span>
+                    </button>
+                    
                 </div>
                 <div class="col-md-6 form-group v-center text-right">
                     <a href="#" class="psforgt">Forgot Password?</a>
