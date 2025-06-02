@@ -1,20 +1,23 @@
 <?php
 
-namespace App\Livewire\Frontend\Home\Portfolio;
+namespace App\Livewire\Frontend\Portfolio;
 
 use App\Models\Portfolio;
-use App\Models\PortfolioSection;
+use App\Models\Service;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class Index extends Component
 {
+    use WithPagination;
+
     public function render()
     {
-        return view('livewire.frontend.home.portfolio.index',[
-            'portfolio_section' => PortfolioSection::first(),
+        return view('livewire.frontend.portfolio.index', [
             'portfolios' => Portfolio::where('status', 'published')
                 ->orderBy('created_at', 'desc')
-                ->take(6)->get(),
+                ->get(),
+            'services' => Service::all(),
         ]);
     }
 }

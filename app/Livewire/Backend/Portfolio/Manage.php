@@ -36,7 +36,7 @@ class Manage extends Component
             $this->start_date = $portfolio->start_date;
             $this->end_date = $portfolio->end_date;
             $this->url = $portfolio->url;
-            $this->status = $portfolio->status;
+            $this->status = $portfolio->status === 'published' ? 1 : 0;
             $this->created_at = $portfolio->created_at;
             $this->updated_at = $portfolio->updated_at;
         } else {
@@ -47,6 +47,7 @@ class Manage extends Component
 
     public function save()
     {
+        // dd($this->status);
         $this->validate([
             'name' => 'required',
             'slug' => 'required|unique:portfolios,slug,' . $this->portfolioId,
@@ -73,7 +74,7 @@ class Manage extends Component
             'start_date' => $this->start_date,
             'end_date' => $this->end_date,
             'url' => $this->url,
-            'status' => $this->status,
+            'status' => $this->status ? 'published' : 'draft',
         ];
 
         if ($this->newImage) {

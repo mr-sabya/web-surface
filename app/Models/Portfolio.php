@@ -34,4 +34,5 @@ class Portfolio extends Model
     {
         return $this->belongsTo(Client::class);
     }
+
 }
