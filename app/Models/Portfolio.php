@@ -35,4 +35,8 @@ class Portfolio extends Model
         return $this->belongsTo(Client::class);
     }
 
+    public function galleries()
+    {
+        return $this->hasMany(PortfolioGallery::class);
+    }
 }

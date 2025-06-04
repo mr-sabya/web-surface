@@ -21,6 +21,9 @@ Route::get('about-us', [App\Http\Controllers\Frontend\AboutController::class, 'i
 // portfolio
 Route::get('portfolio', [App\Http\Controllers\Frontend\PortfolioController::class, 'index'])->name('portfolio.index');
 
+// show portfolio details page
+Route::get('portfolio/{slug}', [App\Http\Controllers\Frontend\PortfolioController::class, 'show'])->name('portfolio.show');
+
 // services from database
 Route::get('service/{slug}', [App\Http\Controllers\Frontend\ServiceController::class, 'show'])->name('service.show');
 

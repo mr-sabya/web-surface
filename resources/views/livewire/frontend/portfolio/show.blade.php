@@ -3,9 +3,9 @@
         <div class="row justify-content-left">
             <div class="col-lg-7">
                 <div class="common-heading pp p-details">
-                    <span>Branding Creative</span>
-                    <h1>Justo Erat Tempor Eros Adipiscing</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus, risus sit amet auctor sodales, justo erat tempor eros.</p>
+                    <span>{{ $portfolio->name }}</span>
+                    <h1>{{ $portfolio->title }}</h1>
+                    <p>{{ $portfolio->short_description }}</p>
                 </div>
             </div>
             <div class="col-lg-5">
@@ -33,14 +33,7 @@
         <div class="row">
             <div class="col-lg-12 single-card-item">
                 <div class="isotope_item pv-">
-                    <div class="item-image">
-                        <img src="images/portfolio/project-view-1.jpg" alt="project name" class="img-fluid" />
-                    </div>
-                </div>
-                <div class="isotope_item pv- mt30">
-                    <div class="item-image">
-                        <img src="images/portfolio/project-view-2.jpg" alt="project name" class="img-fluid" />
-                    </div>
+                    {!! $portfolio->description !!}
                 </div>
             </div>
         </div>

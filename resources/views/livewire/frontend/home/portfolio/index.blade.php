@@ -13,10 +13,10 @@
             <div class="col-lg-4 col-sm-6 col mt40 wow fadeIn" data-wow-delay="{{ $loop->index * 0.2 }}s">
                 <div class="isotope_item up-hor">
                     <div class="item-image">
-                        <a href="#"><img src="{{ asset('storage/' . $portfolio->image) }}" alt="image" class="img-fluid" /> </a>
+                        <a href="{{ route('portfolio.show', $portfolio->slug) }}" wire:navigate><img src="{{ asset('storage/' . $portfolio->image) }}" alt="image" class="img-fluid" /> </a>
                     </div>
                     <div class="item-info-div shdo">
-                        <h4><a href="#">{{ $portfolio->name }}</a></h4>
+                        <h4><a href="{{ route('portfolio.show', $portfolio->slug) }}" wire:navigate>{{ $portfolio->name }}</a></h4>
                         <p>{{ $portfolio->service['title'] }}</p>
                     </div>
                 </div>

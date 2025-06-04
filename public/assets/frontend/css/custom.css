@@ -7,3 +7,12 @@
 .pricing-table .inner-table h2{
     font-size: 24px !important;
 }
+
+.ql-align-center{
+    text-align: center !important;
+}
+
+.isotope_item img{
+    width: 100% !important;
+    height: auto !important;
+}

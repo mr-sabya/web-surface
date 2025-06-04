@@ -27,6 +27,6 @@
 </section>
 <!--End Breadcrumb Area-->
 <!--Start Portfolio-->
-
+<livewire:frontend.portfolio.show portfolioId="{{ $portfolio->id }}" />
 <!--End Portfolio-->
 @endsection
