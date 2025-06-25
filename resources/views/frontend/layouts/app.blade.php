@@ -4,15 +4,23 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Niwax - Web Design &amp; Digital Marketing Agency HTML Template</title>
     <meta name="description" content="Creative Agency, Marketing Agency Template">
     <meta name="keywords" content="Creative Agency, Marketing Agency">
     <meta name="author" content="rajesh-doot">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#4302b2">
+
+
+    <title>{{ $settings->site_title }} - {{ $settings->tagline }}</title>
+
     <!--website-favicon-->
-    <link href="images/favicon.png" rel="icon">
+    @if($settings->favicon)
+    <link href="{{ asset('storage/' . $settings->favicon) }}" rel="icon">
+    @else
+    <link href="{{ asset('assets/frontend/images/favicon.png') }}" rel="icon">
+    @endif
+
     <!--plugin-css-->
     <link href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/frontend/css/plugin.min.css') }}" rel="stylesheet">
@@ -44,7 +52,14 @@
         <!--Start Preloader -->
         <div class="onloadpage" id="page_loader" x-show="loading">
             <div class="pre-content">
-                <div class="logo-pre"><img src="{{ url('assets/frontend/images/logo.png') }}" alt="Logo" class="img-fluid" /></div>
+                <div class="logo-pre">
+                    @if($settings->logo)
+                    <img src="{{ asset('storage/' . $settings->logo) }}" alt="Logo" class="img-fluid" />
+                    @else
+                    <img src="{{ url('assets/frontend/images/logo.png') }}" alt="Logo" class="img-fluid" />
+                    @endif
+
+                </div>
                 <!-- <div class="pre-text- text-radius text-light text-animation bg-b">Niwax - Creative Agency & Portfolio HTML Template Are 2 Seconds Away. Have Patience</div> -->
             </div>
         </div>

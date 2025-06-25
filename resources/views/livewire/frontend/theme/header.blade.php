@@ -2,8 +2,17 @@
     <div class="container-fluid m-pad">
         <div class="menu-header">
             <div class="dsk-logo"><a class="nav-brand" href="{{ route('home') }}" wire:navigate>
+                    @if($settings->white_logo)
+                    <img src="{{ asset('storage/' . $settings->white_logo) }}" alt="Logo" class="mega-white-logo" />
+                    @else
                     <img src="{{ url('assets/frontend/images/white-logo.png') }}" alt="Logo" class="mega-white-logo" />
+                    @endif
+
+                    @if($settings->logo)
+                    <img src="{{ asset('storage/' . $settings->logo) }}" alt="Logo" class="mega-darks-logo" />
+                    @else
                     <img src="{{ url('assets/frontend/images/logo.png') }}" alt="Logo" class="mega-darks-logo" />
+                    @endif
                 </a>
             </div>
             <div class="custom-nav" role="navigation">

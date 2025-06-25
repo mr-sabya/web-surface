@@ -8,6 +8,8 @@ class Footer extends Component
 {
     public function render()
     {
-        return view('livewire.frontend.theme.footer');
+        return view('livewire.frontend.theme.footer',[
+            'settings' => \App\Models\Setting::first(),
+        ]);
     }
 }

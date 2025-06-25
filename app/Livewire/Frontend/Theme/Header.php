@@ -8,6 +8,8 @@ class Header extends Component
 {
     public function render()
     {
-        return view('livewire.frontend.theme.header');
+        return view('livewire.frontend.theme.header',[
+            'settings' => \App\Models\Setting::first(),
+        ]);
     }
 }

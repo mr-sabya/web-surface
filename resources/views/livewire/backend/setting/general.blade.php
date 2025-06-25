@@ -93,6 +93,28 @@
                         @error('favicon') <span class="text-danger">{{ $message }}</span> @enderror
                     </div>
 
+
+                    <!-- Website Link -->
+                    <div class="mb-3">
+                        <label for="website_link" class="form-label">Website Link</label>
+                        <input type="url" id="website_link" class="form-control" wire:model="website_link">
+                        @error('website_link') <span class="text-danger">{{ $message }}</span> @enderror
+                    </div>
+
+                    <!-- Footer About -->
+                    <div class="mb-3">
+                        <label for="footer_about" class="form-label">Footer About</label>
+                        <textarea id="footer_about" class="form-control" rows="3" wire:model="footer_about"></textarea>
+                        @error('footer_about') <span class="text-danger">{{ $message }}</span> @enderror
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="mb-3">
+                        <label for="copyright" class="form-label">Copyright Text</label>
+                        <input type="text" id="copyright" class="form-control" wire:model="copyright">
+                        @error('copyright') <span class="text-danger">{{ $message }}</span> @enderror
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Save Changes</button>
                 </form>
 

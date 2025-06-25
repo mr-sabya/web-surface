@@ -82,12 +82,6 @@ class Setting extends Model
         return Str::limit($value, 100);
     }
 
-    // Mutator to set the site title as uppercase
-    public function setSiteTitleAttribute($value)
-    {
-        $this->attributes['site_title'] = strtoupper($value);
-    }
-
 
     // General Settings
     public function generalSettings()

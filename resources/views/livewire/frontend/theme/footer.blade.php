@@ -23,9 +23,21 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-3 col-sm-6  ftr-brand-pp">
-                    <a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img src="{{ url('assets/frontend/images/logo.png') }}" alt="Logo" /></a>
-                    <a class="navbar-brand mt30 mb25 f-white-logo" href="#"> <img src="{{ url('assets/frontend/images/white-logo.png') }}" alt="Logo" /></a>
-                    <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email</p>
+                    <a class="navbar-brand mt30 mb25 f-dark-logo" href="{{ route('home') }}" wire:navigate>
+                        @if($settings->logo)
+                        <img src="{{ asset('storage/' . $settings->logo) }}" alt="Logo" />
+                        @else
+                        <img src="{{ url('assets/frontend/images/logo.png') }}" alt="Logo" />
+                        @endif
+                    </a>
+                    <a class="navbar-brand mt30 mb25 f-white-logo" href="{{ route('home') }}" wire:navigate>
+                        @if($settings->white_logo)
+                        <img src="{{ asset('storage/' . $settings->white_logo) }}" alt="Logo" />
+                        @else
+                        <img src="{{ url('assets/frontend/images/white-logo.png') }}" alt="Logo" />
+                        @endif
+                    </a>
+                    <p>{{ $settings->footer_about }}</p>
                     <a href="#" class="btn-main bg-btn3 lnk mt20">Become Partner <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                 </div>
                 <div class="col-lg-3 col-sm-6">
@@ -33,15 +45,15 @@
                     <ul class="footer-address-list ftr-details">
                         <li>
                             <span><i class="fas fa-envelope"></i></span>
-                            <p>Email <span> <a href="mailto:info@businessname.com">info@businessname.com</a></span></p>
+                            <p>Email <span> <a href="mailto:{{ $settings->email }}">{{ $settings->email ?? 'N/A' }}</a></span></p>
                         </li>
                         <li>
                             <span><i class="fas fa-phone-alt"></i></span>
-                            <p>Phone <span> <a href="tel:+10000000000">+1 0000 000 000</a></span></p>
+                            <p>Phone <span> <a href="tel:{{ $settings->phone }}">{{ $settings->phone ?? 'N/A'}}</a></span></p>
                         </li>
                         <li>
                             <span><i class="fas fa-map-marker-alt"></i></span>
-                            <p>Address <span> 123 Business Centre London SW1A 1AA</span></p>
+                            <p>Address <span> {{ $settings->address}}</span></p>
                         </li>
                     </ul>
                 </div>
