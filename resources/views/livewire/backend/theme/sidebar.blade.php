@@ -133,6 +133,15 @@
                         </ul>
                     </div>
                 </li>
+
+                <li class="nav-item {{ Route::is('admin.page.*') ? 'active' : '' }}">
+                    <a href="{{ route('admin.page.index') }}" wire:navigate>
+                        <i class="fas fa-th-list"></i>
+                        <p>Pages</p>
+                    </a>
+                </li>
+
+
                 <li class="nav-item">
                     <a data-bs-toggle="collapse" href="#sidebarLayouts">
                         <i class="fas fa-th-list"></i>

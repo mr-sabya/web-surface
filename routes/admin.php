@@ -54,7 +54,12 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
 
     // pages
-    Route::get('website/{page}', [App\Http\Controllers\Backend\PageController::class, 'index'])->name('website.page');
+    Route::get('website/{page}', [App\Http\Controllers\Backend\PageController::class, 'webpages'])->name('website.page');
+    
+    // page component
+    Route::get('pages', [App\Http\Controllers\Backend\PageController::class, 'index'])->name('page.index');
+    Route::get('page/create', [App\Http\Controllers\Backend\PageController::class, 'create'])->name('page.create');
+    Route::get('page/edit/{id}', [App\Http\Controllers\Backend\PageController::class, 'edit'])->name('page.edit');
     
     // services
     Route::get('services', [App\Http\Controllers\Backend\ServiceController::class, 'index'])->name('service.index');

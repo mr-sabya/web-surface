@@ -23,7 +23,7 @@
             <button class="nav-link" id="process-tab" data-bs-toggle="tab" data-bs-target="#process" type="button" role="tab" aria-controls="process" aria-selected="false">Process</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="addon-tab" data-bs-toggle="tab" data-bs-target="#addon" type="button" role="tab" aria-controls="addon" aria-selected="false">Addon</button>
+            <button class="nav-link" id="addon-tab" data-bs-toggle="tab" data-bs-target="#addon" type="button" role="tab" aria-controls="addon" aria-selected="false">Addon (Why Choose Us)</button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="pricing-tab" data-bs-toggle="tab" data-bs-target="#pricing" type="button" role="tab" aria-controls="pricing" aria-selected="false">Pricing</button>

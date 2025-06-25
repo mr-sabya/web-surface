@@ -8,12 +8,13 @@
             <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Dashboard</h6>
         </div>
         <div class="ms-md-auto py-2 py-md-0">
-            <a href="{{ route('admin.page.create') }}" wire:navigate class="btn btn-primary btn-round">Add Page</a>
+            <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
+            <a href="#" class="btn btn-primary btn-round">Add Customer</a>
         </div>
     </div>
 
 
-    <livewire:backend.page.index />
+    @livewire('backend.page.' . $name)
 </div>
 
 @endsection
