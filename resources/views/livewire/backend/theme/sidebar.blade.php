@@ -91,13 +91,13 @@
                 </li>
 
 
-                <li class="nav-item {{ Route::is('admin.website.*') || Route::is('admin.service.*') || Route::is('admin.technology.*') || Route::is('admin.portfolio.*') || Route::is('admin.testimonial.*') ? 'active submenu' : '' }}">
+                <li class="nav-item {{ Route::is('admin.website.*') || Route::is('admin.service.*') || Route::is('admin.technology.*') || Route::is('admin.portfolio.*') || Route::is('admin.testimonial.*') || Route::is('admin.badge.*') ? 'active submenu' : '' }}">
                     <a data-bs-toggle="collapse" href="#webiste">
                         <i class="fas fa-desktop"></i>
                         <p>Website</p>
                         <span class="caret"></span>
                     </a>
-                    <div class="collapse {{ Route::is('admin.website.*') || Route::is('admin.service.*') || Route::is('admin.technology.*') || Route::is('admin.portfolio.*') || Route::is('admin.testimonial.*') ? 'show' : '' }}" id="webiste">
+                    <div class="collapse {{ Route::is('admin.website.*') || Route::is('admin.service.*') || Route::is('admin.technology.*') || Route::is('admin.portfolio.*') || Route::is('admin.testimonial.*') || Route::is('admin.badge.*') ? 'show' : '' }}" id="webiste">
                         <ul class="nav nav-collapse">
                             <li class="{{ Route::is('admin.website.page', 'home') ? 'active' : '' }}">
                                 <a href="{{ route('admin.website.page', 'home') }}" wire:navigate>
@@ -129,6 +129,11 @@
                                 </a>
                             </li>
 
+                            <li class="{{ Route::is('admin.badge.index') ? 'active' : '' }}">
+                                    <a href="{{ route('admin.badge.index') }}" wire:navigate>
+                                        <span class="sub-item">Badges</span>
+                                    </a>
+                            </li>
                         
                         </ul>
                     </div>

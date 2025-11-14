@@ -66,6 +66,9 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
         // our client section
         Route::get('our-client-section', [App\Http\Controllers\Backend\OurClientSectionController::class, 'index'])->name('our-client-section');
 
+        // badge section
+        Route::get('badge-section', [App\Http\Controllers\Backend\BadgeSectionController::class, 'index'])->name('badge-section');
+
         // pages
         Route::get('/{page}', [App\Http\Controllers\Backend\PageController::class, 'webpages'])->name('page');
     });
@@ -100,4 +103,7 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
     Route::get('testimonials', [App\Http\Controllers\Backend\TestimonialController::class, 'index'])->name('testimonial.index');
     Route::get('testimonial/create', [App\Http\Controllers\Backend\TestimonialController::class, 'create'])->name('testimonial.create');
     Route::get('testimonial/edit/{id}', [App\Http\Controllers\Backend\TestimonialController::class, 'edit'])->name('testimonial.edit');
+
+    // badge
+    Route::get('badges', [App\Http\Controllers\Backend\BadgeController::class, 'index'])->name('badge.index');
 });
