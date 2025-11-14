@@ -69,6 +69,9 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
         // badge section
         Route::get('badge-section', [App\Http\Controllers\Backend\BadgeSectionController::class, 'index'])->name('badge-section');
 
+        // industry section
+        Route::get('industry-section', [App\Http\Controllers\Backend\IndustrySectionController::class, 'index'])->name('industry-section');
+
         // pages
         Route::get('/{page}', [App\Http\Controllers\Backend\PageController::class, 'webpages'])->name('page');
     });
@@ -106,4 +109,7 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
     // badge
     Route::get('badges', [App\Http\Controllers\Backend\BadgeController::class, 'index'])->name('badge.index');
+
+    // industry
+    Route::get('industries', [App\Http\Controllers\Backend\IndustryController::class, 'index'])->name('industry.index');
 });
