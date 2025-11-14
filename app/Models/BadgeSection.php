@@ -5,12 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class OurClientSection extends Model
+class BadgeSection extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'title',
         'subtitle',
+        'title',
+        'cta_text',
+        'cta_button_text',
+        'cta_button_link',
     ];
 }

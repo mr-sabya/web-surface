@@ -3,8 +3,8 @@
         <div class="row justify-content-center ">
             <div class="col-lg-8">
                 <div class="common-heading">
-                    <span>{{ $portfolio_section->title }}</span>
-                    <h2 class="mb20">{{ $portfolio_section->subtitle }}</h2>
+                    <span>{{ $portfolio_section->title ?? 'Our Work' }}</span>
+                    <h2 class="mb20">{{ $portfolio_section->subtitle ?? 'Our Latest Creative Work' }}</h2>
                 </div>
             </div>
         </div>

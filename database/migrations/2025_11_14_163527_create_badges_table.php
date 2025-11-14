@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('our_client_sections', function (Blueprint $table) {
+        Schema::create('badges', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
-            $table->string('subtitle')->nullable();
+            $table->string('image'); // Path to the badge image
+            $table->string('title'); // Text below the badge
+            $table->integer('order')->default(0); // For controlling display order
             $table->timestamps();
         });
     }
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('our_client_sections');
+        Schema::dropIfExists('badges');
     }
 };
