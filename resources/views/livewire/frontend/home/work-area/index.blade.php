@@ -1,75 +1,34 @@
 <section class="work-category pad-tb">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="common-heading ptag">
-                    <span>We Have Worked Across Multiple Industries</span>
-                    <h2>Industries We Serve</h2>
-                    <p>Successfully delivered digital products Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        {{-- Only display the header if section data has been added in the backend --}}
+        @if ($section)
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="common-heading ptag">
+                        <span>{{ $section->subtitle }}</span>
+                        <h2>{{ $section->title }}</h2>
+                        <p>{{ $section->description }}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        @endif
+
         <div class="row mt30">
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/house.svg') }}" alt="img">
-                    <h6>Real estate</h6>
+            {{-- Loop through each industry from the database --}}
+            @forelse ($industries as $industry)
+                <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="{{ ($loop->index * 0.2) + 0.1 }}s">
+                    <div class="industry-workfor hoshd">
+                        {{-- Use the asset() helper to get the correct icon path from storage --}}
+                        <img src="{{ asset('storage/' . $industry->icon) }}" alt="{{ $industry->name }}">
+                        <h6>{{ $industry->name }}</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.3s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/travel-case') }}.svg" alt="img">
-                    <h6>Tour &amp; Travels</h6>
+            @empty
+                {{-- This message is shown if the 'industries' table is empty --}}
+                <div class="col-12">
+                    <p class="text-center">No industries to display at the moment.</p>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/video-tutorials') }}.svg" alt="img">
-                    <h6>Education</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.7s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/taxi.svg') }}" alt="img">
-                    <h6>Transport</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.9s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/event.svg') }}" alt="img">
-                    <h6>Event</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.1s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/smartphone.svg') }}" alt="img">
-                    <h6>eCommerce</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.3s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/joystick.svg') }}" alt="img">
-                    <h6>Game</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.5s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/healthcare.svg') }}" alt="img">
-                    <h6>Healthcare</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.7s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/money-growth') }}.svg" alt="img">
-                    <h6>Finance</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.9s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/baker.svg') }}" alt="img">
-                    <h6>Restaurant</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="2.1s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/mobile-app') }}.svg" alt="img">
-                    <h6>On-Demand</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="2.3s">
-                <div class="industry-workfor hoshd"><img src="{{ url('assets/frontend/images/icons/groceries.svg') }}" alt="img">
-                    <h6>Grocery</h6>
-                </div>
-            </div>
+            @endforelse
         </div>
     </div>
 </section>
