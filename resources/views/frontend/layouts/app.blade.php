@@ -86,7 +86,7 @@
     <script data-navigate-once src="{{ asset('assets/frontend/js/plugin.min.js') }}"></script>
 
     <!-- <script data-navigate-once src="{{ asset('assets/frontend/js/preloader.js') }}"></script> -->
-    <script data-navigate-once src="{{ asset('assets/frontend/js/dark-mode.js') }}"></script>
+  
     <!--common script file-->
     <script data-navigate-once src="{{ asset('assets/frontend/js/main.js') }}"></script>
 

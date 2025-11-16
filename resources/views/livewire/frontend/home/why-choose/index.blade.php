@@ -22,7 +22,7 @@
             </div>
             <div class="col-lg-6">
                 <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="single-image bg-shape-dez wow fadeIn" data-wow-duration="2s">
-                    <img src="{{ url('storage/' . $whyChooseUs->image) }}" alt="image" class="img-fluid">
+                    <img src="{{ url('storage/' . $whyChooseUs->image) }}" alt="image" class="img-fluid w-100">
                 </div>
                 <p class="text-center mt30">{{ $whyChooseUs->image_text }}</p>
                 <div class="cta-card mt60 text-center">

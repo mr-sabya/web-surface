@@ -1,3 +1,10 @@
+/* Or, for a specific breakpoint */
+@media (min-width: 1400px) { /* Affects XXL screens and up */
+  .container {
+    max-width: 1320px; /* Overrides Bootstrap's default .container on xxl screens */
+  }
+}
+
 .hero-card-web{
     padding-top: 100px !important;
     padding-bottom: 40px !important;
