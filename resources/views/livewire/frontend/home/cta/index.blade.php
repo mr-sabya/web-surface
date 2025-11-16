@@ -1,15 +1,23 @@
 <section class="app-cta pad-tb">
     <div class="container">
+        @if ($section)
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="common-heading text-w">
-                    <span>Let's work together</span>
-                    <h2>We Love to Listen to Your Requirements</h2>
-                    <a href="#" class="btn-main bg-btn4 lnk">GET STARTED<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
-                    <p class="cta-call">Or call us now <a href="tel:+1234567890"><i class="fas fa-phone-alt"></i> (123) 456 7890</a></p>
+                    <span>{{ $section->subtitle }}</span>
+                    <h2>{{ $section->title }}</h2>
+                    <a href="{{ $section->button_link ?? '#' }}" class="btn-main bg-btn4 lnk">
+                        {{ $section->button_text }}<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span>
+                    </a>
+                    <p class="cta-call">{{ $section->secondary_text }}
+                        <a href="tel:{{ $section->phone_link }}">
+                            <i class="fas fa-phone-alt"></i> {{ $section->phone_number }}
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
+        @endif
     </div>
     <div class="shape shape-c1"></div>
     <div class="shape shape-c2"></div>

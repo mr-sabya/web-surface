@@ -75,6 +75,9 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
         // testimonial section
         Route::get('testimonial-section', [App\Http\Controllers\Backend\TestimonialSectionController::class, 'index'])->name('testimonial-section');
 
+        // cta section
+        Route::get('cta-section', [App\Http\Controllers\Backend\CtaSectionController::class, 'index'])->name('cta-section');
+
         // pages
         Route::get('/{page}', [App\Http\Controllers\Backend\PageController::class, 'webpages'])->name('page');
     });
