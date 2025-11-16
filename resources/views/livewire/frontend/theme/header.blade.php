@@ -1,5 +1,5 @@
 <header class="header-pr {{ Route::is('home') ? 'nav-bg-b' : 'nav-bg-w' }} main-header navfix fixed-top menu-white">
-    <div class="container-fluid m-pad">
+    <div class="container m-pad">
         <div class="menu-header">
             <div class="dsk-logo"><a class="nav-brand" href="{{ route('home') }}" wire:navigate>
                     @if($settings->white_logo)
@@ -23,14 +23,9 @@
 
                 <!-- mobile + desktop - sidebar menu- dark mode witch and button -->
                 <ul class="nav-list right-end-btn">
-                    <li class="hidemobile"><a data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
-
+                    
                     <li class="hidemobile">
-                        <a href="{{ route('contact.index') }}" wire:navigate class="btn-br bg-btn3 btshad-b2 lnk">Request A Quote <span class="circle"></span></a>
-                    </li>
-
-                    <li class="hidedesktop darkmodeswitch">
-                        <div class="switch-wrapper"> <label class="switch" for="niwax"> <input type="checkbox" id="niwax" /> <span class="slider round"></span> </label> </div>
+                        <a href="{{ route('contact.index') }}" wire:navigate class="btn-br bg-btn2 btshad-b2 lnk">Request A Quote <span class="circle"></span></a>
                     </li>
 
                     <li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>

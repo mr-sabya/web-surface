@@ -11,13 +11,14 @@
 
                 <form wire:submit.prevent="save">
                     <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Subtitle</label>
-                            <input type="text" class="form-control" wire:model.defer="subtitle" placeholder="e.g., Let's work together">
-                        </div>
-                        <div class="col-md-6 mb-3">
+
+                        <div class="col-md-12 mb-3">
                             <label class="form-label">Title</label>
-                            <input type="text" class="form-control" wire:model.defer="title" placeholder="e.g., We Love to Listen to Your Requirements">
+                            <input type="text" class="form-control" wire:model.defer="title" placeholder="e.g., Let's work together">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label">Subtitle</label>
+                            <input type="text" class="form-control" wire:model.defer="subtitle" placeholder="e.g., We Love to Listen to Your Requirements">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Button Text</label>

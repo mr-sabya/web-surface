@@ -1,5 +1,5 @@
 <section class="hero-card-web mobile-app-">
-    <div class="hero-main-rp container-fluid">
+    <div class="container py-5">
         <div class="row">
             <div class="col-lg-6 v-center">
                 <div class="hero-heading-sec2 niwax" data-rellax-speed="3">

@@ -18,7 +18,7 @@ class Index extends Component
         $platforms = ReviewPlatform::orderBy('order', 'asc')->get();
 
         // 3. Fetch the testimonials (you may want to add an 'order' column to your Testimonial model too)
-        $testimonials = Testimonial::latest()->get(); // Example: gets the newest ones first
+        $testimonials = Testimonial::where('is_active', true)->latest()->get(); // Example: gets the newest ones first
 
         return view('livewire.frontend.home.testimonial.index', [
             'section' => $section,

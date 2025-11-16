@@ -72,10 +72,7 @@
     <livewire:frontend.theme.header />
     <!--End Header -->
 
-    <!--Start sidebar -->
-    <livewire:frontend.theme.sidebar />
-    <!--end sidebar -->
-
+ 
     @yield('content')
 
     <!--Start Footer-->

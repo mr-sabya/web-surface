@@ -4,8 +4,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="common-heading text-w">
-                    <span>{{ $section->subtitle }}</span>
-                    <h2>{{ $section->title }}</h2>
+                    <span>{{ $section->title }}</span>
+                    <h2>{{ $section->subtitle }}</h2>
                     <a href="{{ $section->button_link ?? '#' }}" class="btn-main bg-btn4 lnk">
                         {{ $section->button_text }}<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span>
                     </a>
