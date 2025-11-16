@@ -72,6 +72,9 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
         // industry section
         Route::get('industry-section', [App\Http\Controllers\Backend\IndustrySectionController::class, 'index'])->name('industry-section');
 
+        // testimonial section
+        Route::get('testimonial-section', [App\Http\Controllers\Backend\TestimonialSectionController::class, 'index'])->name('testimonial-section');
+
         // pages
         Route::get('/{page}', [App\Http\Controllers\Backend\PageController::class, 'webpages'])->name('page');
     });
@@ -112,4 +115,7 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
     // industry
     Route::get('industries', [App\Http\Controllers\Backend\IndustryController::class, 'index'])->name('industry.index');
+
+    // review platform
+    Route::get('review-platforms', [App\Http\Controllers\Backend\ReviewPlatformController::class, 'index'])->name('review-platform.index');
 });
