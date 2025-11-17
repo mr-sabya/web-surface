@@ -130,6 +130,12 @@
                                 </a>
                             </li>
 
+                            <li class="{{ Route::is('admin.office.index') ? 'active' : '' }}">
+                                <a href="{{ route('admin.office.index') }}" wire:navigate>
+                                    <span class="sub-item">Office</span>
+                                </a>
+                            </li>
+
 
                         </ul>
                     </div>

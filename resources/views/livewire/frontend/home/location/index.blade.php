@@ -1,65 +1,43 @@
 <section class="our-office pad-tb">
     <div class="container">
+        {{-- Only display the header if section data has been added in the backend --}}
+        @if ($section)
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="common-heading">
+                        <span>{{ $section->title }}</span>
+                        <h2>{{ $section->subtitle }}</h2>
+                    </div>
+                </div>
+            </div>
+        @endif
+
         <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="common-heading">
-                    <span>Our Locations</span>
-                    <h2>Our Office</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-sm-6 shape-loc wow fadeIn" data-wow-delay=".2s">
-                <div class="office-card hoshd">
-                    <div class="landscp">
-                        <img src="{{ url('assets/frontend/images/location/india-img.png') }}" alt="location" class="img-fluid" />
-                    </div>
-                    <div class="info-text-div">
-                        <h4>India</h4>
-                        <h6 class="mt10">Registered Office</h6>
-                        <p>232, 21st East Street, Kamaraj Nagar, Jaipur, Rajasthan 303030</p>
-                        <ul class="-address-list mt10">
-                            <li><a href="mailto:info@businessname.com"><i class="fas fa-envelope"></i> info@businessname.com</a></li>
-                            <li><a href="tel:+10000000000"><i class="fas fa-phone-alt"></i> +1 0000 000 000</a> </li>
-                        </ul>
-
+            {{-- Loop through each office location from the database --}}
+            @forelse ($offices as $office)
+                <div class="col-lg-4 col-sm-6 shape-loc wow fadeIn" data-wow-delay="{{ ($loop->index * 0.2) + 0.2 }}s">
+                    <div class="office-card hoshd">
+                        <div class="landscp">
+                            {{-- Use the asset() helper for the correct storage path --}}
+                            <img src="{{ asset('storage/' . $office->image) }}" alt="location {{ $office->country }}" class="img-fluid" />
+                        </div>
+                        <div class="info-text-div">
+                            <h4>{{ $office->country }}</h4>
+                            <h6 class="mt10">{{ $office->office_type }}</h6>
+                            <p>{{ $office->address }}</p>
+                            <ul class="-address-list mt10">
+                                <li><a href="mailto:{{ $office->email }}"><i class="fas fa-envelope"></i> {{ $office->email }}</a></li>
+                                <li><a href="tel:{{ $office->phone }}"><i class="fas fa-phone-alt"></i> {{ $office->phone }}</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 shape-loc wow fadeIn" data-wow-delay=".4s">
-                <div class="office-card hoshd">
-                    <div class="landscp">
-                        <img src="{{ url('assets/frontend/images/location/italy.png') }}" alt="location" class="img-fluid" />
-                    </div>
-                    <div class="info-text-div">
-                        <h4>Italy</h4>
-                        <h6 class="mt10">Registered Office</h6>
-                        <p>9988 Piazzetta Scalette Rubiani 99, Rome, 84090</p>
-                        <ul class="-address-list mt10">
-                            <li><a href="mailto:info@businessname.com"><i class="fas fa-envelope"></i> info@businessname.com</a></li>
-                            <li><a href="tel:+10000000000"><i class="fas fa-phone-alt"></i> +1 0000 000 000</a> </li>
-                        </ul>
-
-                    </div>
+            @empty
+                {{-- This message will be shown if the 'offices' table is empty --}}
+                <div class="col-12">
+                    <p class="text-center">Our office locations will be updated soon.</p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 shape-loc wow fadeIn" data-wow-delay=".6s">
-                <div class="office-card hoshd">
-                    <div class="landscp">
-                        <img src="{{ url('assets/frontend/images/location/paris.png') }}" alt="location" class="img-fluid" />
-                    </div>
-                    <div class="info-text-div">
-                        <h4>Paris</h4>
-                        <h6 class="mt10">Registered Office</h6>
-                        <p>603 FA Forest Avenue, New York, USA 10021</p>
-                        <ul class="-address-list mt10">
-                            <li><a href="mailto:info@businessname.com"><i class="fas fa-envelope"></i> info@businessname.com</a></li>
-                            <li><a href="tel:+10000000000"><i class="fas fa-phone-alt"></i> +1 0000 000 000</a> </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
+            @endforelse
         </div>
     </div>
 </section>

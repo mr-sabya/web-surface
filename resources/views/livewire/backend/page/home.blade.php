@@ -125,6 +125,17 @@
                 </div>
             </div>
         </div>
+        <div class="col-lg-3 mb-4">
+            <div class="card page-section">
+                <div class="card-body p-0">
+                    <a href="{{ route('admin.website.office-section') }}" wire:navigate><i class="fas fa-pencil-alt"></i></a>
+                    <img src="{{ url('assets/backend/img/section/office-section.png') }}" alt="" class="w-100">
+                </div>
+                <div class="card-footer">
+                    <h4 class="text-center m-0">Office Section</h4>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>

@@ -78,6 +78,9 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
         // cta section
         Route::get('cta-section', [App\Http\Controllers\Backend\CtaSectionController::class, 'index'])->name('cta-section');
 
+        // office section
+        Route::get('office-section', [App\Http\Controllers\Backend\OfficeSectionController::class, 'index'])->name('office-section');
+
         // pages
         Route::get('/{page}', [App\Http\Controllers\Backend\PageController::class, 'webpages'])->name('page');
     });
@@ -121,4 +124,7 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
     // review platform
     Route::get('review-platforms', [App\Http\Controllers\Backend\ReviewPlatformController::class, 'index'])->name('review-platform.index');
+
+    // office
+    Route::get('offices', [App\Http\Controllers\Backend\OfficeController::class, 'index'])->name('office.index');
 });
