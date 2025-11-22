@@ -46,10 +46,6 @@ return new class extends Migration
             $table->string('team_section_title')->nullable();
             $table->string('team_section_subtitle')->nullable();
 
-
-
-            
-
             $table->timestamps();
         });
     }

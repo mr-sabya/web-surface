@@ -99,11 +99,18 @@
                     </a>
                     <div class="collapse {{ Route::is('admin.website.*') || Route::is('admin.testimonial.*') || Route::is('admin.badge.*') || Route::is('admin.industry.*') ? 'show' : '' }}" id="webiste">
                         <ul class="nav nav-collapse">
-                            <li class="{{ Route::is('admin.website.page', 'home') ? 'active' : '' }}">
+                            <li class="{{ request()->route('page') === 'home' ? 'active' : '' }}">
                                 <a href="{{ route('admin.website.page', 'home') }}" wire:navigate>
                                     <span class="sub-item">Home Page</span>
                                 </a>
                             </li>
+
+                            <li class="{{ request()->route('page') === 'about' ? 'active' : '' }}">
+                                <a href="{{ route('admin.website.page', 'about') }}" wire:navigate>
+                                    <span class="sub-item">About Page</span>
+                                </a>
+                            </li>
+
 
                             <li class="{{ Route::is('admin.badge.index') ? 'active' : '' }}">
                                 <a href="{{ route('admin.badge.index') }}" wire:navigate>
