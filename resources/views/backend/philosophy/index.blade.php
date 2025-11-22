@@ -14,7 +14,7 @@
     </div>
 
 
-    <livewire:backend.badge.index />
+    <livewire:backend.philosophy.index />
 </div>
 
 @endsection

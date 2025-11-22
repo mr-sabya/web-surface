@@ -91,13 +91,13 @@
                 </li>
 
 
-                <li class="nav-item {{ Route::is('admin.website.*') || Route::is('admin.testimonial.*') || Route::is('admin.badge.*') || Route::is('admin.industry.*') ? 'active submenu' : '' }}">
+                <li class="nav-item {{ Route::is('admin.website.*') ? 'active submenu' : '' }}">
                     <a data-bs-toggle="collapse" href="#webiste">
                         <i class="fas fa-desktop"></i>
                         <p>Website</p>
                         <span class="caret"></span>
                     </a>
-                    <div class="collapse {{ Route::is('admin.website.*') || Route::is('admin.testimonial.*') || Route::is('admin.badge.*') || Route::is('admin.industry.*') ? 'show' : '' }}" id="webiste">
+                    <div class="collapse {{ Route::is('admin.website.*') ? 'show' : '' }}" id="webiste">
                         <ul class="nav nav-collapse">
                             <li class="{{ request()->route('page') === 'home' ? 'active' : '' }}">
                                 <a href="{{ route('admin.website.page', 'home') }}" wire:navigate>
@@ -110,40 +110,23 @@
                                     <span class="sub-item">About Page</span>
                                 </a>
                             </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item {{ Route::is('admin.content.*') ? 'active submenu' : '' }}">
+                    <a data-bs-toggle="collapse" href="#content">
+                        <i class="fas fa-desktop"></i>
+                        <p>Contents</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse {{ Route::is('admin.content.*') ? 'show' : '' }}" id="content">
+                        <ul class="nav nav-collapse">
 
-
-                            <li class="{{ Route::is('admin.badge.index') ? 'active' : '' }}">
-                                <a href="{{ route('admin.badge.index') }}" wire:navigate>
-                                    <span class="sub-item">Badges</span>
-                                </a>
-                            </li>
-
-                            <li class="{{ Route::is('admin.testimonial.index') ? 'active' : '' }}">
-                                <a href="{{ route('admin.testimonial.index') }}" wire:navigate>
+                            <li class="{{ Route::is('admin.content.testimonial.index') ? 'active' : '' }}">
+                                <a href="{{ route('admin.content.testimonial.index') }}" wire:navigate>
                                     <span class="sub-item">Testimonial</span>
                                 </a>
                             </li>
-
-
-                            <li class="{{ Route::is('admin.industry.index') ? 'active' : '' }}">
-                                <a href="{{ route('admin.industry.index') }}" wire:navigate>
-                                    <span class="sub-item">Industries</span>
-                                </a>
-                            </li>
-
-                            <li class="{{ Route::is('admin.review-platform.index') ? 'active' : '' }}">
-                                <a href="{{ route('admin.review-platform.index') }}" wire:navigate>
-                                    <span class="sub-item">Review Platforms</span>
-                                </a>
-                            </li>
-
-                            <li class="{{ Route::is('admin.office.index') ? 'active' : '' }}">
-                                <a href="{{ route('admin.office.index') }}" wire:navigate>
-                                    <span class="sub-item">Office</span>
-                                </a>
-                            </li>
-
-
                         </ul>
                     </div>
                 </li>

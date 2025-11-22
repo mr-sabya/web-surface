@@ -62,7 +62,7 @@
                                 </span>
                             </td>
                             <td>
-                                <a href="{{ route('admin.testimonial.edit', $testimonial->id) }}" wire:navigate class="btn btn-sm btn-info"><i class="fas fa-pencil-alt"></i></a>
+                                <a href="{{ route('admin.content.testimonial.edit', $testimonial->id) }}" wire:navigate class="btn btn-sm btn-info"><i class="fas fa-pencil-alt"></i></a>
                                 <button class="btn btn-sm btn-danger" wire:click="delete({{ $testimonial->id }})"
                                     onclick="confirm('Delete this item?') || event.stopImmediatePropagation()">
                                     <i class="fas fa-trash"></i>

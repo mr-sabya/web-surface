@@ -5,11 +5,11 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class BadgeController extends Controller
+class PhilosophyController extends Controller
 {
-    //
+    // Philosophy page
     public function index()
     {
-        return view('backend.badge.index');
+        return view('backend.philosophy.index');
     }
 }

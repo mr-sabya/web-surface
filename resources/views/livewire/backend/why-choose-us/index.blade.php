@@ -1,11 +1,4 @@
 <div>
-    <h2 class="mb-4">Edit Why Choose Us Section</h2>
-
-    @if (session()->has('message'))
-    <div class="alert alert-success">
-        {{ session('message') }}
-    </div>
-    @endif
 
     <form wire:submit.prevent="save">
         <div class="row">
@@ -74,12 +67,10 @@
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">Why Choose Us Section</div>
+                        <div class="card-title">Call To Action (CTA) Section</div>
                     </div>
 
                     <div class="card-body">
-
-                        <h4>Call To Action (CTA) Section</h4>
 
                         <div class="mb-3">
                             <label for="cta_title_prefix" class="form-label">CTA Title Prefix</label>
@@ -119,7 +110,4 @@
 
     </form>
     
-    <div class="mt-5">
-        <livewire:backend.why-choose-us-feature.index whyChooseUsId="{{ $model->id }}" />
-    </div>
 </div>

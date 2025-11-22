@@ -23,7 +23,7 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
         // seo settings
         Route::get('seo-setting', [App\Http\Controllers\Backend\SettingController::class, 'seoSetting'])->name('seo');
-        
+
         // maintenance settings
         Route::get('maintenance-setting', [App\Http\Controllers\Backend\SettingController::class, 'maintenanceSetting'])->name('maintenance');
 
@@ -35,7 +35,7 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
         // email settings
         Route::get('email-setting', [App\Http\Controllers\Backend\SettingController::class, 'emailSetting'])->name('email');
-        
+
         // security settings
         Route::get('security-setting', [App\Http\Controllers\Backend\SettingController::class, 'securitySetting'])->name('security');
     });
@@ -47,9 +47,6 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
     Route::prefix('website')->name('website.')->group(function () {
         // banner
         Route::get('banner', [App\Http\Controllers\Backend\BannerController::class, 'index'])->name('banner');
-
-        // client
-        Route::get('clients', [App\Http\Controllers\Backend\ClientController::class, 'index'])->name('client');
 
         // about section
         Route::get('about-section', [App\Http\Controllers\Backend\AboutSectionController::class, 'index'])->name('about-section');
@@ -81,6 +78,9 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
         // office section
         Route::get('office-section', [App\Http\Controllers\Backend\OfficeSectionController::class, 'index'])->name('office-section');
 
+        // philosophy
+        Route::get('philosophy', [App\Http\Controllers\Backend\PhilosophyController::class, 'index'])->name('philosophy');
+
         // pages
         Route::get('/{page}', [App\Http\Controllers\Backend\PageController::class, 'webpages'])->name('page');
     });
@@ -95,11 +95,8 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
     // services
     Route::get('services', [App\Http\Controllers\Backend\ServiceController::class, 'index'])->name('service.index');
-
     Route::get('service/create', [App\Http\Controllers\Backend\ServiceController::class, 'create'])->name('service.create');
-
     Route::get('service/edit/{id}', [App\Http\Controllers\Backend\ServiceController::class, 'edit'])->name('service.edit');
-
     Route::get('service/{id}', [App\Http\Controllers\Backend\ServiceController::class, 'show'])->name('service.show');
 
 
@@ -111,20 +108,12 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
     Route::get('portfolio/create', [App\Http\Controllers\Backend\PortfolioController::class, 'create'])->name('portfolio.create');
     Route::get('portfolio/edit/{id}', [App\Http\Controllers\Backend\PortfolioController::class, 'edit'])->name('portfolio.edit');
 
-    // testimonial
-    Route::get('testimonials', [App\Http\Controllers\Backend\TestimonialController::class, 'index'])->name('testimonial.index');
-    Route::get('testimonial/create', [App\Http\Controllers\Backend\TestimonialController::class, 'create'])->name('testimonial.create');
-    Route::get('testimonial/edit/{id}', [App\Http\Controllers\Backend\TestimonialController::class, 'edit'])->name('testimonial.edit');
 
-    // badge
-    Route::get('badges', [App\Http\Controllers\Backend\BadgeController::class, 'index'])->name('badge.index');
+    Route::name('content.')->group(function () {
+        // testimonial
+        Route::get('testimonials', [App\Http\Controllers\Backend\TestimonialController::class, 'index'])->name('testimonial.index');
+        Route::get('testimonial/create', [App\Http\Controllers\Backend\TestimonialController::class, 'create'])->name('testimonial.create');
+        Route::get('testimonial/edit/{id}', [App\Http\Controllers\Backend\TestimonialController::class, 'edit'])->name('testimonial.edit');
 
-    // industry
-    Route::get('industries', [App\Http\Controllers\Backend\IndustryController::class, 'index'])->name('industry.index');
-
-    // review platform
-    Route::get('review-platforms', [App\Http\Controllers\Backend\ReviewPlatformController::class, 'index'])->name('review-platform.index');
-
-    // office
-    Route::get('offices', [App\Http\Controllers\Backend\OfficeController::class, 'index'])->name('office.index');
+    });
 });
